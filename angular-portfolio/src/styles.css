@@ -1,1 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: #03060b; color: white;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+#about-me-card{
+    background-color: #13171c;
+    height: 100%;
+    display: flex;
+    padding: 0;
+}
+
+
+#main-layout{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8000px;
+}
+
+#primary-content{
+    width: 60%;
+    height: 100%;
+    padding: 1em;
+}
+
+#secondary-content{
+    width: 40%;
+    height: 100%;
+    padding: 1em;
+}
+
+#toolbar{
+    background-color: #03060b;
+    border-bottom-style: solid;
+    border-color: #333;
+    border-width: 1px;
+}
+
+app-projects{
+
+    margin: 1em 1em;
+    height: 8000px;
+    
+}
+
+h1{
+    font-weight: 500;
+}
+
+#mat-expansion-panel{
+    background: #13171c;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+}
+
+#contact-info{
+    margin: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+#contact-link{
+    width: 50px;
+   
+}
+
+#contact-link:hover{
+    width: 55px;
+    
+}
+
+#project-card{
+    background: #13171c;
+    width: 200px;
+    height: 150px;
+    margin: 1em;
+}
+
+#project-card:hover{
+    width: 220px;
+    height: 170px;
+}
+
+
