@@ -77,13 +77,40 @@ h1{
 #project-card{
     background: #13171c;
     width: 200px;
-    height: 150px;
     margin: 1em;
+    padding: 0;
 }
 
 #project-card:hover{
     width: 220px;
-    height: 170px;
+    cursor: pointer;
+}
+
+#project-miniature{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+mat-card-content{
+    margin: 0 1em;
+}
+
+mat-chip-list{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+.mat-chip-list-wrapper{
+    justify-content: space-between;
+}
+
+#project-header{
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 1em;
+    display: block;
+    margin-bottom: 1em;
 }
 
 

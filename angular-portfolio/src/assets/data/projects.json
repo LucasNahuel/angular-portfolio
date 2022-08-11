@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Training Register",
+        "description": "Front-end angular based app for creating or finding workouts, as well to register performance and metrics analysis for every training session.",
+        "images": [
+            "registro-entrenamiento.vercel.app_ (1).png",
+            "registro-entrenamiento.vercel.app_ (2).png",
+            "registro-entrenamiento.vercel.app_.png",
+            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (1).png",
+            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (2).png",
+            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+).png"
+        ],
+        "miniature": "miniature-registro-entrenamiento.vercel.app_.png",
+        "technologies": [
+            "angular",
+           "typescript",
+           "css",
+           "html",
+           "npm",
+            "git"
+        ],
+        "tags": [
+            "JWT",
+            "ng2-charts",
+            "responsive",
+            "front-end",
+            "web",
+            "app"
+        ]
+    }
+]

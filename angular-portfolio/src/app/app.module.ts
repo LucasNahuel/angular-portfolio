@@ -13,6 +13,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ProjectComponent } from './project/project.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -32,7 +33,8 @@ import { ProjectComponent } from './project/project.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
