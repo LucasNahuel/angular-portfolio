@@ -14,7 +14,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { ProjectComponent } from './project/project.component';
 import {MatChipsModule} from '@angular/material/chips';
-
+import {MatRippleModule} from '@angular/material/core';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ProjectDialogContentComponent } from './project-dialog-content/project-dialog-content.component';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import {MatChipsModule} from '@angular/material/chips';
     CustomToolbarComponent,
     AboutMeComponent,
     ProjectsComponent,
-    ProjectComponent
+    ProjectComponent,
+    ProjectDialogContentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,9 @@ import {MatChipsModule} from '@angular/material/chips';
     MatIconModule,
     MatCardModule,
     MatExpansionModule,
-    MatChipsModule
+    MatChipsModule,
+    MatRippleModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

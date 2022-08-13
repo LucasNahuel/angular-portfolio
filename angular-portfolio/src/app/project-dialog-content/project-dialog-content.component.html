@@ -1,0 +1,65 @@
+<mat-card id="project-dialog-card">
+
+    <mat-card-title>
+        {{data.title}}
+    </mat-card-title>
+
+    <div style="margin: 1em;" [ngStyle]="scroll">
+
+        <div style="max-height: 500px; max-width: 800px;">
+            <img class="project-image-carousel" [ngStyle]="transition" [ngStyle]="zoom"src="../../assets/images/{{data.images[showImageIndex]}}">
+        </div>
+        
+
+        <div style="width: 100%; display:flex; flex-direction: row; justify-content: space-between; position: absolute; top:25%; z-index: 9999;">
+            
+            <button mat-mini-fab *ngIf="showImageIndex > 0" style="margin: 1em;" (click)="showImage(-1)">
+                <mat-icon id="image-displacement-icon">chevron_left</mat-icon>
+            </button>
+
+            <button mat-mini-fab style="margin: 1em;" (click)="toggleZoom()">
+                <mat-icon id="image-displacement-icon">search</mat-icon>
+            </button>
+
+            <button mat-mini-fab *ngIf="showImageIndex < data.images.length-1"  style="margin: 1em;"(click)="showImage(1)">
+                <mat-icon id="image-displacement-icon">chevron_right</mat-icon>
+            </button>
+
+        </div>
+    </div>
+    
+
+    <mat-card-content>
+        <p>
+            {{data.description}}
+        </p>
+    </mat-card-content>
+
+    <mat-card-subtitle>
+        <p>Technologies used</p>
+    </mat-card-subtitle>
+
+    <mat-chip-list>
+
+        
+        
+        <mat-chip *ngFor="let item of data.technologies">{{item}}</mat-chip>
+
+
+    </mat-chip-list>
+
+    <mat-card-subtitle>
+        <p>Tags</p>
+    </mat-card-subtitle>
+
+    <mat-chip-list>
+
+        
+        
+        <mat-chip *ngFor="let item of data.tags">{{item}}</mat-chip>
+
+
+    </mat-chip-list>
+
+
+</mat-card>

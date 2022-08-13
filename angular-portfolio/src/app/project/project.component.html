@@ -1,10 +1,13 @@
-<mat-card id="project-card">
+<mat-card   id="project-card">
+    <div matRipple style="cursor: pointer;" (click)="openProjectDialog()">
+        <img src="../../assets/images/{{project.miniature}}" width="100%" height="100px" style="object-fit:cover; object-position: top;" id="project-miniature">
 
-    <img src="../../assets/images/{{project.miniature}}" width="100%" height="100px" style="object-fit:cover; object-position: top;" id="project-miniature">
+        <mat-card-header id="project-header">{{project.title}}</mat-card-header>
+    
+        <mat-card-content>{{project.description}}</mat-card-content>
+    </div>
 
-    <mat-card-header id="project-header">{{project.title}}</mat-card-header>
-
-    <mat-card-content>{{project.description}}</mat-card-content>
+    
 
     <mat-chip-list>
         

@@ -1,10 +1,20 @@
 <mat-toolbar id="toolbar">
 
     <mat-toolbar-row style="display:flex; flex-direction: row; justify-content: space-between;">
-      <span>My portfolio</span>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
+      
+      
+      <div style="width: 33%;">
+        <h1>My portfolio</h1>
+      </div>
+      
+
+      <div style="width: 33%; display: flex; justify-content: center;">
+        <button mat-stroked-button (click)="changeLayout('projects')">Projects</button>
+        <button mat-stroked-button (click)="changeLayout('info')">About me</button>
+      </div>
+
+      <div style="width: 33%;"></div>
+      
     </mat-toolbar-row>
 
 </mat-toolbar>

@@ -2,16 +2,16 @@
 </app-custom-toolbar>
 
 
-<div id="main-layout">
+<div id="main-layout" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
 
-    <div id="primary-content">
+    <div id="primary-content" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
 
         <app-projects>
         </app-projects>
 
     </div>
 
-    <div id="secondary-content">
+    <div id="secondary-content" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
 
         <app-about-me style="height:8000px;">
 

@@ -27,5 +27,27 @@
             "web",
             "app"
         ]
+    },
+    {
+        "title": "Training Register Api",
+        "description": "Back-end Node.js based REST api intended for managing my training-register web data stored into MongoDB",
+        "images": [
+            "Captura de pantalla 2022-08-11 001059.png"
+        ],
+        "miniature": "miniature-Captura de pantalla 2022-08-11 001059.png",
+        "technologies": [
+            "Node",
+            "Express",
+            "MongoDB",
+            "JavaScript"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git",
+            "JWT"
+        ]
     }
 ]
