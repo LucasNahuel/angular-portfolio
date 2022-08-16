@@ -17,6 +17,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatRippleModule} from '@angular/material/core';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ProjectDialogContentComponent } from './project-dialog-content/project-dialog-content.component';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { ProjectDialogContentComponent } from './project-dialog-content/project-
     MatExpansionModule,
     MatChipsModule,
     MatRippleModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

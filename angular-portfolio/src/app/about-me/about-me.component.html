@@ -1,23 +1,34 @@
-<mat-card id="about-me-card" style="display: flex; flex-direction: column;">
+<mat-card id="about-me-card" style="display: flex; flex-direction: column;" [ngClass]="{ 'light' : getTheme() == 'light' }">
 
     <div id="about-me-header" style="display: flex; flex-direction: column; width: 100%;">
 
-        <img src="../../assets/images/miniature-juanjo-jaramillo-mZnx9429i94-unsplash.jpg" style="height: 100px; width: 100%;object-fit: cover; border-top-left-radius: 4px; border-top-right-radius: 4px" width="627" height="418">
+        <img src="../../assets/images/miniature-juanjo-jaramillo-mZnx9429i94-unsplash.jpg" style="height: 100px; width: 100%;object-fit: cover; border-top-left-radius: 4px; border-top-right-radius: 4px" [ngClass]="{'dark' : getTheme() == 'light'}" width="627" height="418">
 
         <div matRipple id="profile-pic-container">
           <img id="profile-pic" src="../../assets/images/profile_pic.jpg">
+        </div>
+
+        <div style="margin-left: 1em; max-width: 100%;">
+
+
+          <div style="margin-left: 150px;
+          text-align: center;
+          max-width: 100%;" >
+            <h1 style="
+            margin: 1em 1em">Lucas Muñoz developer</h1>
+          </div>
         </div>
         
 
     </div>
 
 
-    <div style="margin-top: 100px; padding: 0 1em;">
+    <div style="padding: 0 1em;">
 
         <mat-accordion id="mat-accordion" multi>
-            <mat-expansion-panel id="mat-expansion-panel">
+            <mat-expansion-panel id="mat-expansion-panel" [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     About Me
                   </mat-panel-title>
                   
@@ -29,9 +40,9 @@
 
 
 
-            <mat-expansion-panel id="mat-expansion-panel">
+            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     Personal Information
                   </mat-panel-title>
                   
@@ -41,9 +52,9 @@
                 datos sobre mi
             </mat-expansion-panel>
 
-            <mat-expansion-panel id="mat-expansion-panel">
+            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     Academic Formation
                   </mat-panel-title>
                   
@@ -53,9 +64,9 @@
                 datos acerca de mi formacion academica
             </mat-expansion-panel>
 
-            <mat-expansion-panel id="mat-expansion-panel">
+            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     Technical Skills
                   </mat-panel-title>
                   
@@ -66,9 +77,9 @@
             </mat-expansion-panel>
 
 
-            <mat-expansion-panel id="mat-expansion-panel">
+            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}"  >
                 <mat-expansion-panel-header>
-                  <mat-panel-title>
+                  <mat-panel-title [ngClass]="{'light' : getTheme() == 'light'}">
                     Personal Skills
                   </mat-panel-title>
                   
@@ -88,7 +99,7 @@
         <div id="contact-info">
 
             <a id="contact-link" href="https://github.com/LucasNahuel" target=”_blank”>
-                <img src="../../assets/images/icons8-github.svg" style="filter: invert(100%); width: 100%;">
+                <img src="../../assets/images/icons8-github.svg" style=" width: 100%;" [ngClass]="{'dark' : getTheme() == 'dark'}">
             </a>
 
             <a style="margin: 0 1em;" id="contact-link" href="https://wa.me/5493625253073" target=”_blank”>

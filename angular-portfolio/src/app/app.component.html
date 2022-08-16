@@ -1,19 +1,19 @@
-<app-custom-toolbar>
+<app-custom-toolbar [layoutRef] = "layoutRef">
 </app-custom-toolbar>
 
 
-<div id="main-layout" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
+<div #layoutRef id="main-layout" [ngStyle]="aboutmeStyle" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
 
-    <div id="primary-content" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
+    <div  id="primary-content" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
 
         <app-projects>
         </app-projects>
 
     </div>
 
-    <div id="secondary-content" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
+    <div  id="secondary-content" [ngClass]="{ 'content-info' : checkLayout() == 'info', 'content-projects' : checkLayout() == 'projects' }">
 
-        <app-about-me style="height:8000px;">
+        <app-about-me  style="height:8000px;">
 
         </app-about-me>
 

@@ -1,19 +1,36 @@
-<mat-toolbar id="toolbar">
+<mat-toolbar id="toolbar" [ngClass]="{'light' : getTheme() == 'light'}">
 
     <mat-toolbar-row style="display:flex; flex-direction: row; justify-content: space-between;">
+
       
-      
-      <div style="width: 33%;">
-        <h1>My portfolio</h1>
+      <div style="display: flex; flex-direction: row; align-items: center;">
+        <mat-icon style="margin-right: 1em;">work</mat-icon>
+        <div id="toolbar-title" >
+          <h1>My portfolio</h1>
+        </div>
       </div>
       
+      
 
-      <div style="width: 33%; display: flex; justify-content: center;">
-        <button mat-stroked-button (click)="changeLayout('projects')">Projects</button>
-        <button mat-stroked-button (click)="changeLayout('info')">About me</button>
-      </div>
+        <div  style="display: flex; justify-content: center;">
+          <button mat-stroked-button id="layout-switches" (click)="changeLayout('projects')">Projects</button>
+          <button mat-stroked-button id="layout-switches"  (click)="changeLayout('info')">About me</button>
+        </div>
+  
+        <div>
+          <button mat-stroked-button *ngIf="getLanguaje() == 'spanish'">ENG</button>
+          <button mat-stroked-button *ngIf="getLanguaje() == 'english'">ESP</button>
+        </div>
 
-      <div style="width: 33%;"></div>
+      
+
+      
+
+
+      <button mat-mini-fab style="border: solid; border-width: 1px; background-color: transparent; box-shadow: none;" (click)="switchTheme()">
+        <mat-icon>{{ getTheme() == 'dark' ? 'light_mode' : 'dark_mode' }}</mat-icon>
+      </button>
+
       
     </mat-toolbar-row>
 

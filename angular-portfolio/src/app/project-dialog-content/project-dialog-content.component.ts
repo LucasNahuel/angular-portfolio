@@ -1,5 +1,6 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-project-dialog-content',
@@ -50,6 +51,11 @@ export class ProjectDialogContentComponent implements OnInit {
       this.scroll = { 'overflow': 'auto'};
     }
   }
+
+  getTheme(){
+    return environment.theme;
+  }
+
 
 
 }

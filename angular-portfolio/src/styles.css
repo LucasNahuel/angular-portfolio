@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; background-color: #03060b; color: white;}
+html, body { height: 100%; color: white;}
+body{  background-color: #03060b; transition: 0.3s;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 #about-me-card{
@@ -10,6 +11,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0;
     margin: 1em;
     transition: all 0.3s;
+}
+
+#about-me-card.light{
+    background-color: white;
+    color: black;
 }
 
 
@@ -22,7 +28,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 #primary-content{
     width: 60%;
     height: 100%;
-    padding: 1em;
 }
 
 #secondary-content{
@@ -35,6 +40,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     border-bottom-style: solid;
     border-color: #333;
     border-width: 1px;
+    transform: 0.3s;
+}
+
+#toolbar.light{
+    background-color: #d6924c;
+    border: none;
 }
 
 app-projects{
@@ -52,6 +63,17 @@ h1{
     border-style: solid;
     border-width: 1px;
     border-color: #333;
+    transition: 0.3s;
+}
+
+#mat-expansion-panel.light{
+    background-color: white;
+    color: black;
+    border-style: none;
+}
+
+mat-panel-title.light{
+    color: black;
 }
 
 #contact-info{
@@ -78,7 +100,12 @@ h1{
     width: 200px;
     margin: 1em;
     padding: 0;
-    transition: transform 0.3s;
+    transition: 0.3s;
+}
+
+#project-card.light{
+    background: white;
+    color: black;
 }
 
 #project-card:hover{
@@ -123,6 +150,8 @@ mat-chip-list{
     top: 1em; 
     left: 1em; 
     border-radius: 50%;
+    border-style: solid;
+    border-color: #d6924c;
     transition: transform 0.3s;
     
 }
@@ -141,20 +170,27 @@ mat-chip-list{
 }
 
 .mat-chip.mat-standard-chip{
-    background-color: #202060;
+    background-color: #d6924c;
     cursor: pointer;
 }
 
 #project-dialog-card{
-    padding: 0;
-    width: 100%;
+    max-width: 100%;
     background: #13171c;
     border: none;
+    overflow: hidden;
+}
+
+#project-dialog-card.light{
+    background-color: white;
+    color: black;
 }
 
 .mat-dialog-container{
+    max-width: 100%;
     padding: 0;
-    background: #13171c;
+    background: transparent;
+    box-shadow: none;
 }
 
 
@@ -170,7 +206,7 @@ mat-chip-list{
 
 .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
     color: white;
-    background: #202060;
+    background: #d6924c;
     opacity: 60%;
     transition: 0.3s;
 }
@@ -187,7 +223,9 @@ mat-chip-list{
 }
 
 
+
 @media (max-width: 900px) {
+
     #secondary-content{
         display: none;
     }
@@ -202,11 +240,18 @@ mat-chip-list{
     #primary-content{
         width: 100%;
     }
+
+    #toolbar-title{
+        display: none;
+    }
+
+    
 }
 
 @media (max-width: 500px){
     #project-card{
-        width: 90%;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -254,3 +299,36 @@ mat-chip-list{
     max-width: 960px;
     margin: 0 auto;
   }
+
+  img.dark{
+    transform: 0.3s;
+    filter: invert(100%);
+  }
+
+
+  .mat-form-field-appearance-outline{
+    border-width: 1px;
+  }
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+
+    color: #d6924c;
+  }
+  .mat-input-element{
+    caret-color: white;
+  }
+
+  
+
+  .mat-input-element.light{
+    caret-color: black;
+    color: black;
+  }
+
+  .mat-form-field.mat-focused .mat-form-field-label{
+    color: #d6924c;
+  }
+
+  mat-label.light{
+    color: grey;
+  }
+

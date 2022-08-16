@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { environment } from 'src/environments/environment';
 import { ProjectDialogContentComponent } from '../project-dialog-content/project-dialog-content.component';
 
 @Component({
@@ -19,13 +20,16 @@ export class ProjectComponent implements OnInit {
 
   openProjectDialog(){
 
-    console.log("opened");
     
     this.dialog.open(ProjectDialogContentComponent,{
       data: this.project,
       width: '100%',
       maxWidth: '800px',
     });
+  }
+
+  getTheme(){
+    return environment.theme;
   }
 
 }

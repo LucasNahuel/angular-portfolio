@@ -1,4 +1,4 @@
-<mat-card id="project-dialog-card">
+<mat-card id="project-dialog-card" [ngClass]="{'light' : getTheme() == 'light' }">
 
     <mat-card-title>
         {{data.title}}
@@ -11,7 +11,7 @@
         </div>
         
 
-        <div style="width: 100%; display:flex; flex-direction: row; justify-content: space-between; position: absolute; top:25%; z-index: 9999;">
+        <div style="width: 100%; left: -0; display:flex; flex-direction: row; justify-content: space-between; position: absolute; top:25%; z-index: 9999;">
             
             <button mat-mini-fab *ngIf="showImageIndex > 0" style="margin: 1em;" (click)="showImage(-1)">
                 <mat-icon id="image-displacement-icon">chevron_left</mat-icon>

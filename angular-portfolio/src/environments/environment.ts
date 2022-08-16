@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  layout: "default"
+  layout: "default",
+  localization: "english",
+  theme: "dark"
 };
 
 /*
