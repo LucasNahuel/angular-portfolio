@@ -245,6 +245,10 @@ mat-chip-list{
         display: none;
     }
 
+    form{
+        margin: 0 1em;
+    }
+
     
 }
 
@@ -252,6 +256,7 @@ mat-chip-list{
     #project-card{
         width: 100%;
         margin: 0;
+        margin-bottom: 1em;
     }
 }
 
@@ -330,5 +335,9 @@ mat-chip-list{
 
   mat-label.light{
     color: grey;
+  }
+
+  mat-chip-list#searchChipList .mat-chip-list-wrapper{
+    justify-content: flex-start;
   }
 

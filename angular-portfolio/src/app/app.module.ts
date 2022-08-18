@@ -18,7 +18,8 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ProjectDialogContentComponent } from './project-dialog-content/project-dialog-content.component';
 import {MatInputModule} from '@angular/material/input';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,10 @@ import {MatInputModule} from '@angular/material/input';
     MatChipsModule,
     MatRippleModule,
     MatDialogModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
