@@ -341,3 +341,29 @@ mat-chip-list{
     justify-content: flex-start;
   }
 
+  .mat-form-field-appearance-outline .mat-form-field-outline-thick{
+
+    opacity: 100%;
+  }
+
+  .mat-form-field-flex{
+    border-color: lightgrey;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 2000;
+  }
+
+
+  .mat-form-field-underline{
+    display: none;
+  }
+
+
+  .mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: #d6924c;
+  }
+
+  .mat-form-field-appearance-fill .mat-form-field-flex{
+    border-radius: 4px 4px 4px 4px;
+  }
