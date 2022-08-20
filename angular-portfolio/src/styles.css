@@ -166,8 +166,6 @@ mat-chip-list{
     
 }
 
-#profile-pic:hover{
-}
 
 .mat-chip.mat-standard-chip{
     background-color: #d6924c;
@@ -366,4 +364,16 @@ mat-chip-list{
 
   .mat-form-field-appearance-fill .mat-form-field-flex{
     border-radius: 4px 4px 4px 4px;
+  }
+
+  mat-selection-list{
+    position: absolute; 
+    z-index: 9999; 
+    margin-top: 15px; 
+    background-color: #1d1f24;
+  }
+
+  mat-selection-list.light{
+    background-color: white;
+    color: black;  
   }

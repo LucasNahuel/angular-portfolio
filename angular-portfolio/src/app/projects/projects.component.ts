@@ -32,9 +32,18 @@ export class ProjectsComponent implements OnInit {
 
   @ViewChild('tag') tag : ElementRef | undefined;
 
+  @ViewChild('formfield') formField : any | undefined;
+
   constructor( private renderer: Renderer2 ) { }
 
   ngOnInit(): void {
+  }
+
+  ngAfterViewInit(){
+    var el = this.formField._elementRef.nativeElement.getElementsByClassName('mat-form-field-flex');
+
+
+    this.renderer.setStyle(el[0], 'border-radius', '4px');
   }
 
   getTheme(){
@@ -112,8 +121,34 @@ export class ProjectsComponent implements OnInit {
         });
       });
     } 
-    console.log(this.dropDownTags);
 
+  }
+
+  formFieldFocus(){
+    var el = this.formField._elementRef.nativeElement.getElementsByClassName('mat-form-field-flex');
+
+
+    this.renderer.setStyle(el[0], 'border-color', '#d6924c');
+
+    
+  }
+
+  formFieldLeave(){
+    
+    var el = this.formField._elementRef.nativeElement.getElementsByClassName('mat-form-field-flex');
+
+
+    this.renderer.setStyle(el[0], 'border-color', 'lightgrey');
+
+  }
+
+  addTag(event: any){
+    const value = (event || '').trim();
+
+    if (value) {
+      this.searchTags.push({name: value});
+    }
+    
   }
 
 

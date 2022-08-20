@@ -1,6 +1,8 @@
 import { NONE_TYPE } from '@angular/compiler';
 import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import englishLayoutData from '../../assets/data/englishLayoutData.json';
+import spanishLayoutData from '../../assets/data/spanishLayoutData.json';
 
 @Component({
   selector: 'app-custom-toolbar',
@@ -74,5 +76,7 @@ export class CustomToolbarComponent implements OnInit {
   
   changeLanguaje(){
     environment.localization == 'english' ? environment.localization = 'spanish' : environment.localization = 'english';
+
+
   }
 }

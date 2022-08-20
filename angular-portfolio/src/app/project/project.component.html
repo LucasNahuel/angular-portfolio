@@ -11,7 +11,7 @@
 
     <mat-chip-list>
         
-        <mat-chip *ngFor="let item of project.technologies">{{item}}</mat-chip>
+        <mat-chip *ngFor="let item of project.technologies" (click)="addTag(item)">{{item}}</mat-chip>
 
 
     </mat-chip-list>

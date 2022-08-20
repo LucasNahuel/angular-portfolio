@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { environment } from 'src/environments/environment';
 import { ProjectDialogContentComponent } from '../project-dialog-content/project-dialog-content.component';
@@ -11,6 +11,10 @@ import { ProjectDialogContentComponent } from '../project-dialog-content/project
 export class ProjectComponent implements OnInit {
 
   @Input() project: any;
+
+  
+  @Output() newTagEvent : EventEmitter<string> = new EventEmitter<string>();
+
 
   constructor(private dialog : MatDialog) { }
 
@@ -30,6 +34,10 @@ export class ProjectComponent implements OnInit {
 
   getTheme(){
     return environment.theme;
+  }
+
+  addTag(tag: any){
+    this.newTagEvent.emit(tag);
   }
 
 }

@@ -4,7 +4,7 @@
     <h1 style="margin-left: 1em;">My Projects</h1>
 
     <form [formGroup]="form" style="width: 100%;" >
-      <mat-form-field style="margin: 0; width: 100%;" appearance="fill" >
+      <mat-form-field style="margin: 0; width: 100%;" appearance="fill"  #formfield>
           <mat-label [ngClass]="{'light' : getTheme() == 'light'}">Searching</mat-label>
           <mat-chip-list id="searchChipList" style="padding: 0; justify-content: flex-start;" #chipList aria-label="search">
             <mat-chip *ngFor="let tag of searchTags" (removed)="remove(tag)"  #tag>
@@ -20,15 +20,17 @@
                   [matChipInputAddOnBlur]="addOnBlur"
                   (input)="loadDropDown()"
                   style="max-height: 50px;"
-                  [ngClass]="{'light' : getTheme() == 'light'}">
+                  [ngClass]="{'light' : getTheme() == 'light'}"
+                  (focus)="formFieldFocus()"
+                  (focusout)="formFieldLeave()">
           </mat-chip-list>
-          <mat-card style="position: absolute; z-index: 9999; margin-top: 15px; " *ngIf="dropDownTags.length > 0" >
-            <mat-selection-list [multiple]="false">
-              <mat-list-option *ngFor="let tag of dropDownTags" [value]="tag" (click)="add(tag)">
+          
+            <mat-selection-list [multiple]="false" [ngClass]="{'light' : getTheme() == 'light'}" *ngIf="dropDownTags.length > 0" >
+              <mat-list-option *ngFor="let tag of dropDownTags" [value]="tag" (click)="add(tag)" [ngStyle]="{'color' : getTheme() == 'light' ? 'black' : 'white'}">
                 {{tag}}
               </mat-list-option>
             </mat-selection-list>
-          </mat-card>
+          
 
           
       </mat-form-field>
@@ -40,7 +42,7 @@
 
 <div style="width: 100%; display:flex; flex-direction: row; justify-content: center; flex-wrap: wrap;">
 
-    <app-project *ngFor="let item of projects" [project]="item">
+    <app-project *ngFor="let item of projects" (newTagEvent)="add($event)" [project]="item">
     </app-project>
 
 </div>

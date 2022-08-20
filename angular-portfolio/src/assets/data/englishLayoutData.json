@@ -1,0 +1,14 @@
+{
+    "title" : "My portfolio",
+    "layout-buttons" : [
+        "Projects",
+        "About me"
+    ],
+    "primary-content-title": "My Projects",
+    "searchbar-text": "Search",
+    "about-me-section": "",
+    "personal-information-section": "",
+    "academic-formation": "",
+    "technical-skills": "",
+    "personal-skills": ""
+}
