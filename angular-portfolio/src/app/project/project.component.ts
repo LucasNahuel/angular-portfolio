@@ -29,6 +29,7 @@ export class ProjectComponent implements OnInit {
       data: this.project,
       width: '100%',
       maxWidth: '800px',
+      minWidth: '400px',
       height: '80%'
     });
   }
