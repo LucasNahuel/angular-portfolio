@@ -26,7 +26,7 @@
     <div style="padding: 0 1em;">
 
         <mat-accordion id="mat-accordion" multi>
-            <mat-expansion-panel id="mat-expansion-panel" [ngClass]="{'light' : getTheme() == 'light'}">
+            <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()" [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     {{this.content.aboutMePanelTitle}}
@@ -40,7 +40,7 @@
 
 
 
-            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
+            <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     {{this.content.personalInfoTitle}}
@@ -56,7 +56,7 @@
                 </ul>
             </mat-expansion-panel>
 
-            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
+            <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     {{this.content.academicFormationTitle}}
@@ -70,7 +70,7 @@
                 </ul>
             </mat-expansion-panel>
 
-            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
+            <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
                     {{content.technicalSkillsTitle}}
@@ -85,7 +85,7 @@
             </mat-expansion-panel>
 
 
-            <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}"  >
+            <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}"  >
                 <mat-expansion-panel-header>
                   <mat-panel-title [ngClass]="{'light' : getTheme() == 'light'}">
                     {{content.personalSkillsTitle}}

@@ -9,6 +9,8 @@
             <mat-icon>close</mat-icon>
           </button>
     </div>
+
+    <mat-dialog-content>
     
 
     <div style="margin: 1em;" [ngStyle]="scroll">
@@ -38,45 +40,47 @@
 
     
 
-    <mat-card-content>
+    
         <p>
             {{data.description}}
         </p>
-    </mat-card-content>
 
-    <div style="padding: 1em;">
-        <a href="{{data.deployment}}" style="color: #d6924c; font-size: 20px;">Deployment</a>
-    </div>
+        <div style="padding: 1em;">
+            <a href="{{data.deployment}}" style="color: #d6924c; font-size: 20px;">Deployment</a>
+        </div>
+    
+        <div style="padding: 1em">
+            <a href="{{data.repository}}" style="color: #d6924c; font-size: 20px;">Respository</a>
+        </div>
+    
+        <mat-card-subtitle>
+            <p [ngStyle]="{ 'color' : getTheme() == 'light' ? 'black' : 'ligthgrey' }">Technologies used</p>
+        </mat-card-subtitle>
+    
+        <mat-chip-list>
+    
+            
+            
+            <mat-chip *ngFor="let item of data.technologies">{{item}}</mat-chip>
+    
+    
+        </mat-chip-list>
+    
+        <mat-card-subtitle>
+            <p [ngStyle]="{ 'color' : getTheme() == 'light' ? 'black' : 'ligthgrey' }">Tags</p>
+        </mat-card-subtitle>
+    
+        <mat-chip-list>
+    
+            
+            
+            <mat-chip *ngFor="let item of data.tags">{{item}}</mat-chip>
+    
+    
+        </mat-chip-list>
+    
+    </mat-dialog-content>
 
-    <div style="padding: 1em">
-        <a href="{{data.repository}}" style="color: #d6924c; font-size: 20px;">Respository</a>
-    </div>
-
-    <mat-card-subtitle>
-        <p>Technologies used</p>
-    </mat-card-subtitle>
-
-    <mat-chip-list>
-
-        
-        
-        <mat-chip *ngFor="let item of data.technologies">{{item}}</mat-chip>
-
-
-    </mat-chip-list>
-
-    <mat-card-subtitle>
-        <p>Tags</p>
-    </mat-card-subtitle>
-
-    <mat-chip-list>
-
-        
-        
-        <mat-chip *ngFor="let item of data.tags">{{item}}</mat-chip>
-
-
-    </mat-chip-list>
-
+    
 
 </mat-card>

@@ -30,4 +30,8 @@ export class AboutMeComponent implements OnInit {
     return Math.floor(((Date.now() - this.birthDate.getTime())/(1000 * 3600 * 24))/365.25);
   }
 
+  isLayoutInfo(){
+    return environment.layout == 'info';
+  }
+
 }

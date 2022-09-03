@@ -254,8 +254,14 @@ mat-chip-list{
     #project-card{
         width: 100%;
         margin: 0;
-        margin-bottom: 1em;
+        margin-bottom: 4em;
     }
+}
+
+@media (max-width: 375px){
+  #portfolio-icon{
+    display: none;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -285,6 +291,7 @@ mat-chip-list{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    margin-bottom: 150px;
   }
 
   #main-layout.content-projects{
@@ -301,6 +308,7 @@ mat-chip-list{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    margin-top: 200px;
   }
 
   img.dark{
@@ -390,3 +398,5 @@ mat-chip-list{
     background-color: white;
     color: black;  
   }
+
+  

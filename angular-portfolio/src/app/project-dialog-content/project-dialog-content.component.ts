@@ -24,6 +24,7 @@ export class ProjectDialogContentComponent implements OnInit {
   constructor(public dialogRef: MatDialogRef<ProjectDialogContentComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
+    this.dialogRef.updateSize('80%', '80%');
   }
 
   async showImage(displacement: number){

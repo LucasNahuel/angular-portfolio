@@ -134,15 +134,21 @@ export class ProjectsComponent implements OnInit {
       
       projects.forEach(item  =>{
         item.technologies.forEach((item: string) => {
-          item.toLocaleLowerCase().startsWith(this.form.controls['inputValue'].value.toLocaleLowerCase()) ? this.dropDownTags.push(item) : null;
+          item.toLocaleLowerCase().startsWith(this.form.controls['inputValue'].value.toLocaleLowerCase()) ? this.addTagDropdown(item) : null;
         });
 
         item.tags.forEach((item: string) =>{
-          item.toLocaleLowerCase().startsWith(this.form.controls['inputValue'].value.toLocaleLowerCase()) ? this.dropDownTags.push(item) : null;
+          item.toLocaleLowerCase().startsWith(this.form.controls['inputValue'].value.toLocaleLowerCase()) ? this.addTagDropdown(item) : null;
         });
       });
     } 
 
+  }
+
+  addTagDropdown(tag: any){
+    if(!this.dropDownTags.includes(tag)){
+      this.dropDownTags.push(tag);
+    }
   }
 
   formFieldFocus(){
