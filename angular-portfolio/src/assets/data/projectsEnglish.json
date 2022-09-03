@@ -85,6 +85,8 @@
             "ang_portfolio_1.png", "ang_portfolio_2.png", "ang_portfolio_3.png"
         ],
         "miniature" : "ang_portfolio_1.png",
+        "deployment": "https://angular-portfolio-lake.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/angular-portfolio.git",
         "technologies" : [
             "angular",
             "typescript"
