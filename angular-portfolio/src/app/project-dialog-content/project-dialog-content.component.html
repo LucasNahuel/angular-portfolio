@@ -1,8 +1,15 @@
 <mat-card id="project-dialog-card" [ngClass]="{'light' : getTheme() == 'light' }">
 
-    <mat-card-title>
-        {{data.title}}
-    </mat-card-title>
+    <div style="display: flex; width: 100%; flex-direction: row; justify-content: space-between; align-items: center;" >
+        <mat-card-title style="margin-bottom: 0px;">
+            {{data.title}}
+        </mat-card-title>
+
+        <button mat-mini-fab style="border: solid; border-width: 1px; background-color: transparent; box-shadow: none;" [ngStyle]="{ 'color' : getTheme() == 'light' ? 'black' : 'ligthgrey'}"  (click)="close()">
+            <mat-icon>close</mat-icon>
+          </button>
+    </div>
+    
 
     <div style="margin: 1em;" [ngStyle]="scroll">
 

@@ -3,6 +3,8 @@ import { Component, ElementRef, Input, OnInit, Renderer2, ViewChild } from '@ang
 import { environment } from 'src/environments/environment';
 import englishLayoutData from '../../assets/data/englishLayoutData.json';
 import spanishLayoutData from '../../assets/data/spanishLayoutData.json';
+import { LocalStorageService } from '../local-storage.service';
+import { PageContentService } from '../page-content.service';
 
 @Component({
   selector: 'app-custom-toolbar',
@@ -14,9 +16,17 @@ export class CustomToolbarComponent implements OnInit {
 
     @Input() layoutRef : any | undefined;
 
-  constructor(private renderer: Renderer2) { }
+    content : any;
+  constructor(private renderer: Renderer2, private localStorage : LocalStorageService, private contentService : PageContentService) {
+    this.contentService.contentChange.subscribe(res => {
+      this.content = res;
+    });
+
+    this.contentService.getContent();
+   }
 
   ngOnInit(): void {
+    this.switchBackgroundColor();
   }
 
   changeLayout(layout: string){
@@ -59,15 +69,25 @@ export class CustomToolbarComponent implements OnInit {
 
     if(environment.theme == 'dark'){
       environment.theme = 'light'
-      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'background', '#ebebeb');
-      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'color', 'black');
+      this.switchBackgroundColor();
+      this.localStorage.set("theme", "light");
     }else{
       environment.theme = 'dark';
-      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'background', '#03060b');
-      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'color', 'white');
+      this.switchBackgroundColor();
+      this.localStorage.set("theme", "dark");
     }
 
     
+  }
+
+  switchBackgroundColor(){
+    if(environment.theme == "light"){
+      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'background', '#ebebeb');
+      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'color', 'black');
+    }else{
+      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'background', '#03060b');
+      this.renderer.setStyle(this.layoutRef.parentElement.parentElement ? this.layoutRef.parentElement.parentElement : null , 'color', 'white');
+    }
   }
 
   getLanguaje(){
@@ -76,7 +96,7 @@ export class CustomToolbarComponent implements OnInit {
   
   changeLanguaje(){
     environment.localization == 'english' ? environment.localization = 'spanish' : environment.localization = 'english';
-
+    this.contentService.getContent();
 
   }
 }

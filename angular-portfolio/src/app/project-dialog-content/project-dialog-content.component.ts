@@ -1,5 +1,5 @@
 import { Component, Inject, Input, OnInit, Output } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { environment } from 'src/environments/environment';
 import { EventEmitter } from '@angular/core';
 
@@ -21,7 +21,7 @@ export class ProjectDialogContentComponent implements OnInit {
 
   scroll : any = null;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
+  constructor(public dialogRef: MatDialogRef<ProjectDialogContentComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
   }
@@ -57,6 +57,9 @@ export class ProjectDialogContentComponent implements OnInit {
     return environment.theme;
   }
 
+  close(){
+    this.dialogRef.close();
+  }
   
 
 

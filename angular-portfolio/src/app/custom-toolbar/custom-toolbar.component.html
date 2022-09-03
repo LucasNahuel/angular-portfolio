@@ -6,20 +6,20 @@
       <div style="display: flex; flex-direction: row; align-items: center;">
         <mat-icon style="margin-right: 1em;">work</mat-icon>
         <div id="toolbar-title" >
-          <h1>My portfolio</h1>
+          <h1>{{this.content.title}}</h1>
         </div>
       </div>
       
       
 
         <div  style="display: flex; justify-content: center;">
-          <button mat-stroked-button id="layout-switches" (click)="changeLayout('projects')">Projects</button>
-          <button mat-stroked-button id="layout-switches"  (click)="changeLayout('info')">About me</button>
+          <button mat-stroked-button id="layout-switches" (click)="changeLayout('projects')">{{this.content.layoutButtons[0]}}</button>
+          <button mat-stroked-button id="layout-switches"  (click)="changeLayout('info')">{{this.content.layoutButtons[1]}}</button>
         </div>
   
         <div>
-          <button mat-stroked-button *ngIf="getLanguaje() == 'spanish'">ENG</button>
-          <button mat-stroked-button *ngIf="getLanguaje() == 'english'">ESP</button>
+          <button mat-stroked-button *ngIf="getLanguaje() == 'spanish'" (click)="changeLanguaje()">ENG</button>
+          <button mat-stroked-button *ngIf="getLanguaje() == 'english'" (click)="changeLanguaje()">ESP</button>
         </div>
 
       

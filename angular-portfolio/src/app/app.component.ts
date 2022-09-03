@@ -1,5 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { LocalStorageService } from './local-storage.service';
 
 @Component({
   selector: 'app-root',
@@ -18,10 +19,6 @@ export class AppComponent {
   
   checkLayout(){
 
-    console.log
-
-    
-
     return environment.layout;
   }
 
@@ -31,6 +28,24 @@ export class AppComponent {
   delay(ms: number) {
     return new Promise( resolve => setTimeout(resolve, ms) );
   }
+
+  constructor(private localStorage: LocalStorageService){
+
+  }
+
+  ngOnInit(): void{
+    let theme : any = 'dark';
+
+    if (this.localStorage.get("theme")){
+      theme = this.localStorage.get("theme");
+    }
+
+    environment.theme = theme;
+
+  }
+
+
+
 
   
 

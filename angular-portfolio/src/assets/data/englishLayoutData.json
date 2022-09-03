@@ -1,14 +1,26 @@
 {
     "title" : "My portfolio",
-    "layout-buttons" : [
+    "layoutButtons" : [
         "Projects",
         "About me"
     ],
-    "primary-content-title": "My Projects",
-    "searchbar-text": "Search",
-    "about-me-section": "",
-    "personal-information-section": "",
-    "academic-formation": "",
-    "technical-skills": "",
-    "personal-skills": ""
+    "primaryContentTitle": "My Projects",
+    "searchbarText": "Search",
+    "aboutMePanelTitle": "About Me",
+    "personalInfoTitle": "Personal Info",
+    "academicFormationTitle": "Academic Formation",
+    "technicalSkillsTitle": "Technical Skills",
+    "personalSkillsTitle": "Personal Skills",
+    "aboutMeSection": "A passionate person about most tech related topics. Self improvement and discipline leads my values. I appreciate results over methods.",
+    "personalInformationSection": [
+        "Name: Lucas Nahuel Muñoz", "Location: Argentina, Chaco, Resistencia", "Mobile Number: +54 9 3625 253073", "Email: munozlucas96@gmail.com"
+    ],
+    "academicFormation": "Universitary Programming Technician, Universidad Tecnológica Nacional, August 2019 (concluded)",
+    "technicalSkills": [
+        "Frameworks/Languajes/Platforms i've worked with: HTML, CSS, Angular (typeScript, material), Java (Spring Boot, JPA), SQL ( MSSQL, MySQL ), .NET (C#, MVC), Node.js (JavaScript, Express), MongoDB",
+        "Idioms: Spanish, English."
+    ],
+    "personalSkills": [
+        "honesty", "responsability", "punctuality", "objectivity", "pragmatism"
+    ]
 }

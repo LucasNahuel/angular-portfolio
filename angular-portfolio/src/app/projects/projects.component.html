@@ -1,11 +1,11 @@
 
 
 <div style="display: flex; width: 100%; ">
-    <h1 style="margin-left: 1em;">My Projects</h1>
+    <h1 style="margin-left: 1em;">{{content.primaryContentTitle}}</h1>
 
     <form [formGroup]="form" style="width: 100%;" >
-      <mat-form-field style="margin: 0; width: 100%;" appearance="fill"  #formfield>
-          <mat-label [ngClass]="{'light' : getTheme() == 'light'}">Searching</mat-label>
+      <mat-form-field style="margin: 0; width: 100%;" appearance="fill"  #formfield [ngClass] = "{ 'light' : getTheme() == 'light' }">
+          <mat-label [ngClass]="{'light' : getTheme() == 'light'}">{{content.searchbarText}}</mat-label>
           <mat-chip-list id="searchChipList" style="padding: 0; justify-content: flex-start;" #chipList aria-label="search">
             <mat-chip *ngFor="let tag of searchTags" (removed)="remove(tag)"  #tag>
               {{tag.name}}
@@ -13,23 +13,30 @@
                 <mat-icon>cancel</mat-icon>
               </button>
             </mat-chip>
-            <input
-                  formControlName="inputValue"
-                  [matChipInputFor]="chipList"
-                  [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                  [matChipInputAddOnBlur]="addOnBlur"
-                  (input)="loadDropDown()"
-                  style="max-height: 50px;"
-                  [ngClass]="{'light' : getTheme() == 'light'}"
-                  (focus)="formFieldFocus()"
-                  (focusout)="formFieldLeave()">
+            
+            <div>
+              <input
+              formControlName="inputValue"
+              [matChipInputFor]="chipList"
+              [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+              [matChipInputAddOnBlur]="addOnBlur"
+              (input)="loadDropDown()"
+              style="max-height: 50px;"
+              [ngClass]="{'light' : getTheme() == 'light'}"
+              (focus)="formFieldFocus()"
+              (focusout)="formFieldLeave()">
+
+
+              <mat-selection-list [multiple]="false" [ngClass]="{'light' : getTheme() == 'light'}" *ngIf="dropDownTags.length > 0" >
+                <mat-list-option *ngFor="let tag of dropDownTags" [value]="tag" (click)="add(tag)" [ngStyle]="{'color' : getTheme() == 'light' ? 'black' : 'white'}">
+                  {{tag}}
+                </mat-list-option>
+              </mat-selection-list>
+            </div>
+            
           </mat-chip-list>
           
-            <mat-selection-list [multiple]="false" [ngClass]="{'light' : getTheme() == 'light'}" *ngIf="dropDownTags.length > 0" >
-              <mat-list-option *ngFor="let tag of dropDownTags" [value]="tag" (click)="add(tag)" [ngStyle]="{'color' : getTheme() == 'light' ? 'black' : 'white'}">
-                {{tag}}
-              </mat-list-option>
-            </mat-selection-list>
+            
           
 
           

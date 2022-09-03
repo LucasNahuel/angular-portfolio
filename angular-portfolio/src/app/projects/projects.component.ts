@@ -1,9 +1,9 @@
 import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MatChipInputEvent, MatChipList } from '@angular/material/chips';
 import { environment } from 'src/environments/environment';
-import projects from '../../assets/data/projects.json';
 import {COMMA, ENTER, M} from '@angular/cdk/keycodes';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { PageContentService } from '../page-content.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -11,7 +11,7 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects : Array<any> = projects;
+  projects = new Array<any>();
 
   addOnBlur = true;
 
@@ -34,7 +34,19 @@ export class ProjectsComponent implements OnInit {
 
   @ViewChild('formfield') formField : any | undefined;
 
-  constructor( private renderer: Renderer2 ) { }
+  content : any;
+
+  constructor( private renderer: Renderer2, private contentService: PageContentService ) {
+    contentService.contentChange.subscribe(res => {
+      this.content = res;
+    });
+
+    contentService.projectsChangeLang.subscribe(res => {
+      this.projects = res;
+    });
+    contentService.getContent();
+
+   }
 
   ngOnInit(): void {
   }
@@ -86,7 +98,7 @@ export class ProjectsComponent implements OnInit {
 
 
     this.searchResult = [];
-    this.projects = projects;
+    this.contentService.getContent();
 
     var filteredArray = new Array<any>();
 
@@ -105,18 +117,27 @@ export class ProjectsComponent implements OnInit {
     return this.form.controls['inputValue'].value ? true : false;
   }
 
-  loadDropDown(){
+ loadDropDown(){
 
     this.dropDownTags = [];
 
+    let projects = new Array();
 
-    if(this.form.controls['inputValue'].value.length > 0){
-      projects.forEach(item =>{
-        item.technologies.forEach(item => {
+    this.contentService.projectsChangeLang.subscribe(res => {
+      projects = res;
+    });
+
+    this.contentService.getContent();
+
+
+    if(this.form.controls['inputValue'].value.length > 0 && projects){
+      
+      projects.forEach(item  =>{
+        item.technologies.forEach((item: string) => {
           item.toLocaleLowerCase().startsWith(this.form.controls['inputValue'].value.toLocaleLowerCase()) ? this.dropDownTags.push(item) : null;
         });
 
-        item.tags.forEach(item =>{
+        item.tags.forEach((item: string) =>{
           item.toLocaleLowerCase().startsWith(this.form.controls['inputValue'].value.toLocaleLowerCase()) ? this.dropDownTags.push(item) : null;
         });
       });

@@ -11,6 +11,8 @@
             "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+).png"
         ],
         "miniature": "miniature-registro-entrenamiento.vercel.app_.png",
+        "deployment": "https://registro-entrenamiento.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/RegistroEntrenamiento.git",
         "technologies": [
             "angular",
            "typescript",
@@ -29,12 +31,14 @@
         ]
     },
     {
-        "title": "Training Register Api",
+        "title": "Training Register Node Api",
         "description": "Back-end Node.js based REST api intended for managing my training-register web data stored into MongoDB",
         "images": [
             "Captura de pantalla 2022-08-11 001059.png"
         ],
         "miniature": "miniature-Captura de pantalla 2022-08-11 001059.png",
+        "deployment": "https://training-register-nodejs-api-3.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/training-register-nodejs-api",
         "technologies": [
             "Node",
             "Express",
@@ -49,5 +53,50 @@
             "git",
             "JWT"
         ]
+    },
+    {
+        "title": "Training Register Spring Boot Api",
+        "description": "Back-end Spring Boot based REST api intended for managing my training-register web data stored into a MySQL db instance.",
+        "images": [
+            "training_springboot_api.PNG"
+        ],
+        "miniature": "training_springboot_api.PNG",
+        "deployment": "",
+        "repository": "https://github.com/LucasNahuel/training-register-api",
+        "technologies": [
+            "SpringBoot",
+            "Java",
+            "MySQL",
+            "JWT"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git",
+            "JWT"
+        ]
+    },
+    {
+        "title" : "Angular Portfolio",
+        "description" : "Angular based app for showcase my projects and info about me.",
+        "images": [
+            "ang_portfolio_1.png", "ang_portfolio_2.png", "ang_portfolio_3.png"
+        ],
+        "miniature" : "ang_portfolio_1.png",
+        "technologies" : [
+            "angular",
+            "typescript"
+        ],
+        "tags" : [
+            "app",
+            "front-end",
+            "responsive",
+            "npm",
+            "git",
+            "web"
+        ]
+        
     }
 ]

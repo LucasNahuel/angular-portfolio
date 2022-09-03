@@ -5,7 +5,7 @@
         <img src="../../assets/images/miniature-juanjo-jaramillo-mZnx9429i94-unsplash.jpg" style="height: 100px; width: 100%;object-fit: cover; border-top-left-radius: 4px; border-top-right-radius: 4px" [ngClass]="{'dark' : getTheme() == 'light'}" width="627" height="418">
 
         <div matRipple id="profile-pic-container">
-          <img id="profile-pic" src="../../assets/images/profile_pic.jpg">
+          <img id="profile-pic" src="https://media-exp1.licdn.com/dms/image/C4E03AQGXSuyUPDlZUw/profile-displayphoto-shrink_800_800/0/1564616339726?e=1667433600&v=beta&t=O6_2crfldDduNYzSqFYCVRYn_-Kid5089Jw_TtbOVVc">
         </div>
 
         <div style="margin-left: 1em; max-width: 100%;">
@@ -29,13 +29,13 @@
             <mat-expansion-panel id="mat-expansion-panel" [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
-                    About Me
+                    {{this.content.aboutMePanelTitle}}
                   </mat-panel-title>
                   
                 </mat-expansion-panel-header>
     
     
-                esta es la informacion sobre mi
+                {{this.content.aboutMeSection}}
             </mat-expansion-panel>
 
 
@@ -43,50 +43,62 @@
             <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
-                    Personal Information
+                    {{this.content.personalInfoTitle}}
                   </mat-panel-title>
                   
                 </mat-expansion-panel-header>
     
     
-                datos sobre mi
+                <ul>
+                  
+                  <li>Age : {{getAge()}}</li>
+                  <li *ngFor="let item of content.personalInformationSection">{{item}}</li>
+                </ul>
             </mat-expansion-panel>
 
             <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
-                    Academic Formation
+                    {{this.content.academicFormationTitle}}
                   </mat-panel-title>
                   
                 </mat-expansion-panel-header>
     
     
-                datos acerca de mi formacion academica
+                <ul>
+                  <li><a style="color: #d6924c;" target="_blank" href="https://registrograduados.siu.edu.ar/consulta.php?ah=st630ff93c3aa1f6.05931950&ai=registro_dngu%7C%7C92000001&tcm=popup&cGFyYW1ldHJv=eyJpZF90cmFtaXRlIjoiNDI5MDA0Iiwic2lzdGVtYSI6InNpZGNlciIsImlkX3RpcG9fZG9jdW1lbnRvIjoiRE5JIiwiZG9jdW1lbnRvIjoiMzk5NDAxODgiLCJ0aXBvX3lfZG9jdW1lbnRvIjoiRG9jdW1lbnRvIE5hY2lvbmFsIGRlIElkZW50aWRhZCAzOTk0MDE4OCIsImZlY2hhX2VncmVzbyI6IjIwMTktMDctMTEiLCJub21icmVfYXBlbGxpZG8iOiJNVVx1MDBkMU9aLCBMVUNBUyBOQUhVRUwiLCJhcGVsbGlkbyI6Ik1VXHUwMGQxT1oiLCJub21icmUiOiJMVUNBUyBOQUhVRUwiLCJuYWNpb25hbGlkYWQiOiJBUkdFTlRJTkEiLCJpbnN0aXR1Y2lvbiI6IlVuaXZlcnNpZGFkIFRlY25vbFx1MDBmM2dpY2EgTmFjaW9uYWwiLCJ0aXR1bG8iOiJUXHUwMGU5Y25pY28gVW5pdmVyc2l0YXJpbyBlbiBQcm9ncmFtYWNpXHUwMGYzbiIsImJsb2NrY2hhaW4iOiJibG9ja2NoYWluX2xvZ29fbmVncm8ucG5nIn0%3D&tm=1">{{content.academicFormation}}</a></li>
+                </ul>
             </mat-expansion-panel>
 
             <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
-                    Technical Skills
+                    {{content.technicalSkillsTitle}}
                   </mat-panel-title>
                   
                 </mat-expansion-panel-header>
     
     
-                qué se hacer en el ambito tecnico
+                <ul>
+                  <li *ngFor="let item of content.technicalSkills">{{item}}</li>
+                </ul>
             </mat-expansion-panel>
 
 
             <mat-expansion-panel id="mat-expansion-panel"  [ngClass]="{'light' : getTheme() == 'light'}"  >
                 <mat-expansion-panel-header>
                   <mat-panel-title [ngClass]="{'light' : getTheme() == 'light'}">
-                    Personal Skills
+                    {{content.personalSkillsTitle}}
                   </mat-panel-title>
                   
                 </mat-expansion-panel-header>
     
     
-                qué se hacer en el ambito tecnico
+               <ul>
+                <li *ngFor="let item of content.personalSkills">
+                  {{item}}
+                </li>
+               </ul>
             </mat-expansion-panel>
 
 

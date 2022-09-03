@@ -1,0 +1,96 @@
+[
+    {
+        "title": "Registro de Entrenamiento",
+        "description": "Aplicación Front-End basada en angular para crear o encontrar entrenamientos, como tambien funcionalidad para registrar y analizar el desempeño de cada sesión de entrenamiento.",
+        "images": [
+            "registro-entrenamiento.vercel.app_ (1).png",
+            "registro-entrenamiento.vercel.app_ (2).png",
+            "registro-entrenamiento.vercel.app_.png",
+            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (1).png",
+            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (2).png",
+            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+).png"
+        ],
+        "miniature": "miniature-registro-entrenamiento.vercel.app_.png",
+        "technologies": [
+            "angular",
+           "typescript",
+           "css",
+           "html",
+           "npm",
+            "git"
+        ],
+        "tags": [
+            "JWT",
+            "ng2-charts",
+            "responsive",
+            "front-end",
+            "web",
+            "app"
+        ]
+    },
+    {
+        "title": "API Registro Entrenamiento",
+        "description": "Aplicación Back-End basada en node.js para administrar los datos de mi aplicación 'Registro de Entrenamiento' guardados en MongoDB.",
+        "images": [
+            "Captura de pantalla 2022-08-11 001059.png"
+        ],
+        "miniature": "miniature-Captura de pantalla 2022-08-11 001059.png",
+        "technologies": [
+            "Node",
+            "Express",
+            "MongoDB",
+            "JavaScript"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git",
+            "JWT"
+        ]
+    },
+    {
+        "title": "Registro de Entrenamiento Spring Boot API",
+        "description": "Back-end API basada en Java Spring Boot ideada para funcionar en conjunto a mi aplicación 'registro de entrenamiento', administrando datos almacenados en MySQL",
+        "images": [
+            "training_springboot_api.PNG"
+        ],
+        "miniature": "training_springboot_api.PNG",
+        "technologies": [
+            "SpringBoot",
+            "Java",
+            "MySQL",
+            "JWT"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git",
+            "JWT"
+        ]
+    },
+    {
+        "title" : "Portafolio Angular",
+        "description" : "Aplicacion basada en Angular para exponer mis proyectos e informacion acerca de mí.",
+        "images": [
+            "ang_portfolio_1.png", "ang_portfolio_2.png", "ang_portfolio_3.png"
+        ],
+        "miniature" : "ang_portfolio_1.png",
+        "technologies" : [
+            "angular",
+            "typescript"
+        ],
+        "tags" : [
+            "app",
+            "front-end",
+            "responsive",
+            "npm",
+            "git",
+            "web"
+        ]
+        
+    }
+]
