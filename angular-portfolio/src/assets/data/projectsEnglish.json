@@ -127,5 +127,27 @@
             "css"
         ]
         
+    },
+    {
+        "title": "Angular Spotify Node Api",
+        "description": "Back-to-back node api which uses spotify api services and retrieve them to my angular-spotify-app.",
+        "images": [
+            "angular_spotify_api.PNG"
+        ],
+        "miniature": "angular_spotify_api.PNG",
+        "deployment": "https://angular-spotify-api.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/angular-spotify-api",
+        "technologies": [
+            "Node",
+            "Express",
+            "JavaScript"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git"
+        ]
     }
 ]
