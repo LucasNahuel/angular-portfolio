@@ -97,7 +97,34 @@
             "responsive",
             "npm",
             "git",
-            "web"
+            "web",
+            "css",
+            "html"
+        ]
+        
+    },
+    {
+        "title" : "Angular Spotify App",
+        "description" : "Angular based app for navigating and previewing spotify content, using the spotify api services.",
+        "images": [
+            "angular_spotify_app_1.png", "angular_spotify_app_2.png", "angular_spotify_app_3.png"
+        ],
+        "miniature" : "angular_spotify_app_1.png",
+        "deployment": "https://angular-spotify-app.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/angular-spotify-app",
+        "technologies" : [
+            "angular",
+            "typescript"
+        ],
+        "tags" : [
+            "app",
+            "front-end",
+            "responsive",
+            "npm",
+            "git",
+            "web",
+            "html",
+            "css"
         ]
         
     }
