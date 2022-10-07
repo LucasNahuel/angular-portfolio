@@ -1,402 +1,415 @@
-/* You can add global styles to this file, and also import other style files */
+  /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; color: white;}
-body{  background-color: #03060b; transition: 0.3s;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  html, body { height: 100%; color: white;}
+  body{  background-color: #03060b; transition: 0.3s;}
+  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-#about-me-card{
-    background-color: #13171c;
-    height: 100%;
-    display: flex;
-    padding: 0;
-    margin: 1em;
-    transition: all 0.3s;
-}
+  #about-me-card{
+      background-color: #13171c;
+      height: 100%;
+      display: flex;
+      padding: 0;
+      margin: 1em;
+      transition: all 0.3s;
+  }
 
-#about-me-card.light{
-    background-color: white;
-    color: black;
-}
+  #about-me-card.light{
+      background-color: white;
+      color: black;
+  }
 
 
-#main-layout{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
+  #main-layout{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+  }
 
-#primary-content{
-    width: 60%;
-    height: 100%;
-}
+  #primary-content{
+      width: 60%;
+      height: 100%;
+  }
 
-#secondary-content{
-    width: 40%;
-    height: 100%;
-}
+  #secondary-content{
+      width: 40%;
+      height: 100%;
+  }
 
-#toolbar{
-    background-color: #03060b;
-    border-bottom-style: solid;
-    border-color: #333;
-    border-width: 1px;
-    transform: 0.3s;
-}
+  #toolbar{
+      background-color: #03060b;
+      border-bottom-style: solid;
+      border-color: #333;
+      border-width: 1px;
+      transform: 0.3s;
+  }
 
-#toolbar.light{
-    background-color: #d6924c;
-    border: none;
-}
+  #toolbar.light{
+      background-color: #d6924c;
+      border: none;
+  }
 
-app-projects{
+  app-projects{
 
-    margin: 1em 1em;
+      margin: 1em 1em;
+      
+  }
+
+  h1{
+      font-weight: 500;
+  }
+
+  #mat-expansion-panel{
+      background: #13171c;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #333;
+      transition: 0.3s;
+  }
+
+  #mat-expansion-panel.light{
+      background-color: white;
+      color: black;
+      border-style: none;
+  }
+
+  mat-panel-title.light{
+      color: black;
+  }
+
+  #contact-info{
+      margin: 1em 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      
+  }
+
+  #contact-link{
+      width: 50px;
+      transition: transform 0.3s;
     
-}
+  }
 
-h1{
-    font-weight: 500;
-}
+  #contact-link:hover{
+      transform: scale(1.10);
+  }
 
-#mat-expansion-panel{
-    background: #13171c;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #333;
-    transition: 0.3s;
-}
+  #project-card{
+      background: #13171c;
+      width: 200px;
+      margin: 1em;
+      padding: 0;
+      transition: 0.3s;
+  }
 
-#mat-expansion-panel.light{
-    background-color: white;
-    color: black;
-    border-style: none;
-}
+  #project-card.light{
+      background: white;
+      color: black;
+  }
 
-mat-panel-title.light{
-    color: black;
-}
+  #project-card:hover{
+      transform: scale(1.05);
+      
+  }
 
-#contact-info{
-    margin: 1em 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-}
+  #project-miniature{
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+  }
 
-#contact-link{
-    width: 50px;
-    transition: transform 0.3s;
-   
-}
+  mat-card-content{
+      margin: 0 1em;
+  }
 
-#contact-link:hover{
-    transform: scale(1.10);
-}
+  mat-chip-list{
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      
+  }
 
-#project-card{
-    background: #13171c;
-    width: 200px;
-    margin: 1em;
-    padding: 0;
-    transition: 0.3s;
-}
+  .mat-chip-list-wrapper{
+      justify-content: space-between;
+  }
 
-#project-card.light{
-    background: white;
-    color: black;
-}
-
-#project-card:hover{
-    transform: scale(1.05);
-    
-}
-
-#project-miniature{
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-mat-card-content{
-    margin: 0 1em;
-}
-
-mat-chip-list{
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    
-}
-
-.mat-chip-list-wrapper{
-    justify-content: space-between;
-}
-
-#project-header{
-    font-weight: 500;
-    font-size: 16px;
-    margin-left: 1em;
-    display: block;
-    margin-bottom: 1em;
-    transition: all 0.3s;
-}
+  #project-header{
+      font-weight: 500;
+      font-size: 16px;
+      margin-left: 1em;
+      display: block;
+      margin-bottom: 1em;
+      transition: all 0.3s;
+  }
 
 
-#profile-pic-container{
-    width: 150px;
-    height: 150px;
-    position:absolute; 
-    top: 1em; 
-    left: 1em; 
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #d6924c;
-    transition: transform 0.3s;
-    
-}
+  #profile-pic-container{
+      width: 150px;
+      height: 150px;
+      position:absolute; 
+      top: 1em; 
+      left: 1em; 
+      border-radius: 50%;
+      border-style: solid;
+      border-color: #d6924c;
+      transition: transform 0.3s;
+      
+  }
 
-#profile-pic-container:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-}
+  #profile-pic-container:hover{
+      transform: scale(1.05);
+      cursor: pointer;
+  }
 
-#profile-pic{
-    width: 150px; 
-    
-}
-
-
-.mat-chip.mat-standard-chip{
-    background-color: #d6924c;
-    cursor: pointer;
-}
-
-#project-dialog-card{
-    max-width: 100%;
-    background: #13171c;
-    border: none;
-    overflow: hidden;
-}
-
-#project-dialog-card.light{
-    background-color: white;
-    color: black;
-}
-
-.mat-dialog-container{
-    max-width: 100%;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-}
+  #profile-pic{
+      width: 150px; 
+      
+  }
 
 
-.cdk-overlay-backdrop.cdk-overlay-backdrop-showing{
-    background: black;
-    opacity: 0.6;
-}
+  .mat-chip.mat-standard-chip{
+      background-color: #d6924c;
+      cursor: pointer;
+  }
 
-.cdk-overlay-pane{
-    max-width: 800px;
-    width: 100%;
-}
+  #project-dialog-card{
+      max-width: 100%;
+      background: #13171c;
+      border: none;
+      overflow: hidden;
+  }
 
-.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
-    color: white;
-    background: #d6924c;
-    opacity: 60%;
-    transition: 0.3s;
-}
-.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent:hover{
-    opacity: 100%;
-}
+  #project-dialog-card.light{
+      background-color: white;
+      color: black;
+  }
 
-.project-image-carousel{
-    display: block;
-    margin: 0 auto;
-    max-height: 500px;
-    max-width: 100%;
-    transition: all 0.2s;
-}
+  .mat-dialog-container{
+      max-width: 100%;
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+  }
+
+
+  .cdk-overlay-backdrop.cdk-overlay-backdrop-showing{
+      background: black;
+      opacity: 0.6;
+  }
+
+  .cdk-overlay-pane{
+      max-width: 800px;
+      width: 100%;
+  }
+
+  .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
+      color: white;
+      background: #d6924c;
+      opacity: 60%;
+      transition: 0.3s;
+  }
+  .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent:hover{
+      opacity: 100%;
+  }
+
+  .project-image-carousel{
+      display: block;
+      margin: 0 auto;
+      max-height: 500px;
+      max-width: 100%;
+      transition: all 0.2s;
+  }
 
 
 
-@media (max-width: 900px) {
+  @media (max-width: 900px) {
 
-    #secondary-content{
-        display: none;
+      #secondary-content{
+          display: none;
+      }
+      #secondary-content.content-info{
+          display: block;
+      }
+      #secondary-content.content-projects{
+          width: 100%;
+          max-width: 960px;
+          margin: 0 auto;
+      }
+      #primary-content{
+          width: 100%;
+      }
+
+      #toolbar-title{
+          display: none;
+      }
+
+      form{
+          margin: 0 1em;
+      }
+
+      
+  }
+
+  @media (max-width: 500px){
+      #project-card{
+          width: 100%;
+          margin: 0;
+          margin-bottom: 4em;
+      }
+  }
+
+  @media (max-width: 375px){
+    #portfolio-icon{
+      display: none;
     }
+  }
+
+  ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
+
+    #main-layout.content-info{
+      flex-direction: column-reverse;
+    }
+
+    #primary-content.content-info{
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
     #secondary-content.content-info{
-        display: block;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      margin-bottom: 150px;
     }
+
+    #main-layout.content-projects{
+      flex-direction: column;
+    }
+
+    #primary-content.content-projects{
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
     #secondary-content.content-projects{
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    #primary-content{
-        width: 100%;
+      width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      margin-top: 200px;
     }
 
-    #toolbar-title{
-        display: none;
+    img.dark{
+      transform: 0.3s;
+      filter: invert(100%);
     }
 
-    form{
-        margin: 0 1em;
+
+    .mat-form-field-appearance-outline{
+      border-width: 1px;
+    }
+    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+
+      color: #d6924c;
+    }
+    .mat-input-element{
+      caret-color: white;
+    }
+
+
+    mat-form-field:hover{
+      cursor: text;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex{
+      background-color: #13171c;
+    }
+
+    .mat-form-field-appearance-fill.light .mat-form-field-wrapper .mat-form-field-flex{
+      background-color: white;
     }
 
     
-}
 
-@media (max-width: 500px){
-    #project-card{
-        width: 100%;
-        margin: 0;
-        margin-bottom: 4em;
+    .mat-input-element.light{
+      caret-color: black;
+      color: black;
     }
-}
 
-@media (max-width: 375px){
-  #portfolio-icon{
-    display: none;
-  }
-}
+    .mat-form-field.mat-focused .mat-form-field-label{
+      color: #d6924c;
+    }
 
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+    mat-label.light{
+      color: grey;
+    }
 
-  #main-layout.content-info{
-    flex-direction: column-reverse;
-  }
+    mat-chip-list#searchChipList .mat-chip-list-wrapper{
+      justify-content: flex-start;
+    }
 
-  #primary-content.content-info{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-  }
+    .mat-form-field-appearance-outline .mat-form-field-outline-thick{
 
-  #secondary-content.content-info{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-bottom: 150px;
-  }
+      opacity: 100%;
+    }
 
-  #main-layout.content-projects{
-    flex-direction: column;
-  }
-
-  #primary-content.content-projects{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-  }
-
-  #secondary-content.content-projects{
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    margin-top: 200px;
-  }
-
-  img.dark{
-    transform: 0.3s;
-    filter: invert(100%);
-  }
+    .mat-form-field-flex{
+      border-color: lightgrey;
+      border-radius: 4px;
+      border-style: solid;
+      border-width: 1px;
+      z-index: 2000;
+    }
 
 
-  .mat-form-field-appearance-outline{
-    border-width: 1px;
-  }
-  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
-
-    color: #d6924c;
-  }
-  .mat-input-element{
-    caret-color: white;
-  }
+    .mat-form-field-underline{
+      display: none;
+    }
 
 
-  mat-form-field:hover{
-    cursor: text;
-  }
+    .mat-form-field.mat-focused .mat-form-field-ripple{
+      background-color: #d6924c;
+    }
 
-  .mat-form-field-appearance-fill .mat-form-field-flex{
-    background-color: #13171c;
-  }
+    .mat-form-field-appearance-fill .mat-form-field-flex{
+      border-radius: 4px 4px 4px 4px;
+    }
 
-  .mat-form-field-appearance-fill.light .mat-form-field-wrapper .mat-form-field-flex{
-    background-color: white;
-  }
+    mat-selection-list{
+      position: absolute; 
+      z-index: 9999; 
+      margin-top: 15px; 
+      background-color: #1d1f24;
+    }
 
-  
+    mat-selection-list.light{
+      background-color: white;
+      color: black;  
+    }
 
-  .mat-input-element.light{
-    caret-color: black;
-    color: black;
-  }
-
-  .mat-form-field.mat-focused .mat-form-field-label{
-    color: #d6924c;
-  }
-
-  mat-label.light{
-    color: grey;
-  }
-
-  mat-chip-list#searchChipList .mat-chip-list-wrapper{
-    justify-content: flex-start;
-  }
-
-  .mat-form-field-appearance-outline .mat-form-field-outline-thick{
-
-    opacity: 100%;
-  }
-
-  .mat-form-field-flex{
-    border-color: lightgrey;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 1px;
-    z-index: 2000;
-  }
-
-
-  .mat-form-field-underline{
-    display: none;
-  }
-
-
-  .mat-form-field.mat-focused .mat-form-field-ripple{
-    background-color: #d6924c;
-  }
-
-  .mat-form-field-appearance-fill .mat-form-field-flex{
-    border-radius: 4px 4px 4px 4px;
-  }
-
-  mat-selection-list{
-    position: absolute; 
-    z-index: 9999; 
-    margin-top: 15px; 
-    background-color: #1d1f24;
-  }
-
-  mat-selection-list.light{
-    background-color: white;
-    color: black;  
-  }
-
-  
+    #downloadResumeLink{
+      margin: 1em auto;
+      height: 40px;
+      display: flex;
+      padding: 0 1em;
+      align-items: center;
+      width: fit-content;
+      text-decoration: none;
+      color: #d6924c;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 4px;
+    }
+    
