@@ -110,19 +110,26 @@
         </mat-accordion>
 
 
-        <div id="contact-info">
+        <div id="contact-info" [ngStyle]="{'border-color' : getTheme() == 'light' ? 'rgb(211 211 211)' : 'rgb(51 51 51)'}">
 
-            <a id="contact-link" href="https://github.com/LucasNahuel" target=”_blank”>
-                <img src="../../assets/images/icons8-github.svg" style=" width: 100%;" [ngClass]="{'dark' : getTheme() == 'dark'}">
-            </a>
+            <div style="width: 100%; margin-bottom: 1em;">{{this.content.contactLinksTitle}}</div>
 
-            <a style="margin: 0 1em;" id="contact-link" href="https://wa.me/5493625253073" target=”_blank”>
-                <img src="../../assets/images/icons8-whatsapp-96.svg" style="filter: invert(69%) sepia(16%) saturate(1882%) hue-rotate(89deg) brightness(93%) contrast(94%);  width: 100%;">
-            </a>
+            <div style="display: flex; flex-direction: row;">
 
-            <a id="contact-link" href="https://www.linkedin.com/in/luki/" target=”_blank”>
-                <img src="../../assets/images/icons8-linkedin.svg" style="filter: invert(30%) sepia(93%) saturate(1206%) hue-rotate(173deg) brightness(95%) contrast(101%);  width: 100%;">
-            </a>
+                <a id="contact-link" href="https://github.com/LucasNahuel" target=”_blank”>
+                  <img src="../../assets/images/icons8-github.svg" style=" width: 100%;" [ngClass]="{'dark' : getTheme() == 'dark'}">
+              </a>
+
+              <a style="margin: 0 1em;" id="contact-link" href="https://wa.me/5493625253073" target=”_blank”>
+                  <img src="../../assets/images/icons8-whatsapp-96.svg" style="filter: invert(69%) sepia(16%) saturate(1882%) hue-rotate(89deg) brightness(93%) contrast(94%);  width: 100%;">
+              </a>
+
+              <a id="contact-link" href="https://www.linkedin.com/in/luki/" target=”_blank”>
+                  <img src="../../assets/images/icons8-linkedin.svg" style="filter: invert(30%) sepia(93%) saturate(1206%) hue-rotate(173deg) brightness(95%) contrast(101%);  width: 100%;">
+              </a>
+            </div>
+
+            
 
         </div>
 
