@@ -36,5 +36,7 @@ export class PageContentService {
     this.projectsChangeLang.emit(projects);
   }
 
+  
+
 
 }

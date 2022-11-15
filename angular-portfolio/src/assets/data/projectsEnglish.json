@@ -109,7 +109,7 @@
         "images": [
             "angular_spotify_app_1.png", "angular_spotify_app_2.png", "angular_spotify_app_3.png"
         ],
-        "miniature" : "angular_spotify_app_1.png",
+        "miniature" : "miniature_angular_spotify_app_1.png",
         "deployment": "https://angular-spotify-app.vercel.app/",
         "repository": "https://github.com/LucasNahuel/angular-spotify-app",
         "technologies" : [
@@ -146,6 +146,52 @@
             "back-end",
             "api",
             "restful",
+            "npm",
+            "git"
+        ]
+    },
+    {
+        "title": "News Homepage",
+        "description": "Static reactive webpage in response to the News Homepage Frontend Mentor challenge.",
+        "images": [
+             "fem-news-homepage-three.vercel.app_.png", "fem-news-homepage-three.vercel.app_(1).png",
+            "fem-news-homepage-three.vercel.app_(2).png"
+        ],
+        "miniature": "miniature_fem-news-homepage-three.vercel.app_.png",
+        "deployment": "https://fem-news-homepage-three.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/fem-news-homepage",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ],
+        "tags": [
+            "front-end",
+            "grid",
+            "reactive",
+            "flexbox",
+            "npm",
+            "git"
+        ]
+    },
+    {
+        "title": "Notifications Page",
+        "description": "Static and responsive notifications webpage in response to the Frontend Mentor challenge.",
+        "images": [
+            "fem-notification-page-navy.vercel.app_.png", "fem-notification-page-navy.vercel.app_(1).png"
+        ],
+        "miniature": "miniature_fem-notification-page-navy.vercel.app_.png",
+        "deployment": "https://fem-notification-page-navy.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/fem-notification-page",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ],
+        "tags": [
+            "front-end",
+            "reactive",
+            "flexbox",
             "npm",
             "git"
         ]
