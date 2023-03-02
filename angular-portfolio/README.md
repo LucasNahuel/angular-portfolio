@@ -1,3 +1,3 @@
 # AngularPortfolio
 
-Simple angular project to show the software i've worked at
+Full feature angular project to show the software i've worked on
