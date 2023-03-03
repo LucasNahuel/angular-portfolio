@@ -417,3 +417,16 @@
       border-radius: 4px;
     }
     
+
+    .project-link{
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 20px;
+      border-color: #d6924c;
+      padding: 10px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      width: fit-content;
+    }

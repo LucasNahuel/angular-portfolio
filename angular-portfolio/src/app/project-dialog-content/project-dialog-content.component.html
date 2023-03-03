@@ -45,12 +45,19 @@
             {{data.description}}
         </p>
 
-        <div style="padding: 1em;">
-            <a href="{{data.deployment}}" style="color: #d6924c; font-size: 20px;">Deployment</a>
-        </div>
-    
-        <div style="padding: 1em">
-            <a href="{{data.repository}}" style="color: #d6924c; font-size: 20px;">Respository</a>
+        <div style="padding: 1em; display: flex; flex-direction: row; gap: 1em; justify-content: center; flex-wrap: wrap;">
+            <a href="{{data.deployment}}" style="color: #d6924c; font-size: 20px;" class="project-link">
+                <mat-icon>
+                    public
+                </mat-icon>
+                Deployment
+            </a>
+        
+           
+            <a href="{{data.repository}}" style="color: #d6924c; font-size: 20px; " class="project-link">
+                <img src="../../assets/images/icons8-github.svg" style="width: 24px; height: 24px; filter: invert(64%) sepia(53%) saturate(515%) hue-rotate(346deg) brightness(89%) contrast(87%);">
+                Respository
+            </a>
         </div>
     
         <mat-card-subtitle>
