@@ -185,5 +185,36 @@
             "npm",
             "git"
         ]
+    },
+    {
+        "title": "Calendario React",
+        "description": "Administrador de calendario hecho en React.js",
+        "images": [
+            "react-calendar-desktop-1.PNG", "react-calendar-desktop-2.PNG", "react-calendar-mobile-1.PNG", "react-calendar-mobile-2.PNG"
+        ],
+        "miniature": "react-calendar-desktop-1-miniature.PNG",
+        "deployment": "https://react-calendar-lemon.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/react-calendar",
+        "technologies": [
+            "React",
+            "React Router",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "tags": [
+            "front-end",
+            "media queries",
+            "responsive",
+            "flexbox",
+            "npm",
+            "git",
+            "lifehooks",
+            "hooks",
+            "routing",
+            "forms",
+            "CRUD",
+            "JSON"
+        ]
     }
 ]
