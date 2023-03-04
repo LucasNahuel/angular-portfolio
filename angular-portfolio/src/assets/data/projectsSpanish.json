@@ -216,5 +216,28 @@
             "CRUD",
             "JSON"
         ]
+    },
+    {
+        "title": "Calendario Node API",
+        "description": "Aplicación back-end para ser utilizada junto con mi aplicación de calendario React.",
+        "images": [
+            "node-calendar-1.PNG"
+        ],
+        "miniature": "node-calendar-1.PNG",
+        "deployment": "https://node-calendar-api.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/node-calendar-api",
+        "technologies": [
+            "Node",
+            "Express",
+            "JavaScript",
+            "MongoDB"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git"
+        ]
     }
 ]

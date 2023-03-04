@@ -145,6 +145,8 @@
         "tags": [
             "back-end",
             "api",
+            "pagination",
+            "JSON",
             "restful",
             "npm",
             "git"
@@ -225,6 +227,29 @@
             "forms",
             "CRUD",
             "JSON"
+        ]
+    },
+    {
+        "title": "Node Calendar API",
+        "description": "Back end application to be used with my React-Calendar app.",
+        "images": [
+            "node-calendar-1.PNG"
+        ],
+        "miniature": "node-calendar-1.PNG",
+        "deployment": "https://node-calendar-api.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/node-calendar-api",
+        "technologies": [
+            "Node",
+            "Express",
+            "JavaScript",
+            "MongoDB"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git"
         ]
     }
 ]
