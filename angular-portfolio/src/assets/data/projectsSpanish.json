@@ -239,5 +239,31 @@
             "npm",
             "git"
         ]
+    },
+    {
+        "title": "Formulario de multiples pasos",
+        "description": "Solucion al reto de Frontend Mentor, incluyendo responsividad, sanitizacion y manejo de errores de entrada.",
+        "images": [
+            "localhost_4200_.png", "localhost_4200_(1).png", "localhost_4200_(2).png", "localhost_4200_(3).png", "localhost_4200_(4).png",
+            "localhost_4200_(5).png", "localhost_4200_(6).png", "localhost_4200_(7).png", "localhost_4200_(8).png", "localhost_4200_(9).png"
+        ],
+        "miniature": "localhost_4200_miniature.png",
+        "deployment": "https://angular-multi-step-form.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/angular-multi-step-form",
+        "technologies": [
+            "Angular",
+            "typescript",
+            "CSS",
+            "HTML"
+        ],
+        "tags": [
+            "front-end",
+            "media queries",
+            "responsive",
+            "flexbox",
+            "npm",
+            "git",
+            "forms"
+        ]
     }
 ]
