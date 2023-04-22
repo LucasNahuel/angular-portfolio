@@ -13,15 +13,24 @@
     "personalSkillsTitle": "Personal Skills",
     "aboutMeSection": "I'm an enthusiast about every technology related topic. Self improvement and discipline leads my values. I appreciate results over methods.",
     "personalInformationSection": [
-        "Name: Lucas Nahuel Muñoz", "Location: Argentina, Chaco, Resistencia", "Mobile Number: +54 9 3625 253073", "Email: munozlucas96@gmail.com"
+        "🏷️ Name: Lucas Nahuel Munoz", "📌 Location: Argentina, Chaco, Resistencia", "📱 Mobile Number: +54 9 3625 253073", "📧 Email: munozlucas96@gmail.com"
     ],
     "academicFormation": "Universitary Programming Technician, Universidad Tecnológica Nacional, August 2019 (concluded)",
-    "technicalSkills": [
-        "Frameworks/Languajes/Platforms i've worked with: HTML, CSS, Angular (typeScript, material), Java (Spring Boot, JPA), SQL ( MSSQL, MySQL ), .NET (C#, MVC), Node.js (JavaScript, Express), MongoDB (NoSQL), GitHub (GIT CLI). ",
-        "Idioms: Spanish, English."
-    ],
+    "technicalSkills": {
+
+        "intro" :
+        "Frameworks, languajes and platforms i've worked with:",
+        
+        "frontend" : ["HTML", "CSS", "Angular (typeScript, material design)", "React (JavaScript)"],
+        "backend" : ["Java (SpringBoot, JPA)", "Node (JavaScript, Express)" , ".NET (C#, MVC)"],
+        "database" : ["SQL ( MSSQL, MySQL )", "MongoDB (NoSQL)"],
+        "versioning" : ["GitHub (GIT CLI)"],
+
+
+        "idioms" : ["Spanish", "English"]
+    },
     "personalSkills": [
-        "honesty", "responsability", "punctuality", "objectivity", "pragmatism"
+        "🤞 honesty", "📝 responsability", "⏰ punctuality", "🕵️‍♂️ objectivity", "🏭 pragmatism"
     ],
     "downloadResumeSource": "../../assets/resumes/lucas_muñoz_cv_english.pdf",
     "downloadResumeText": "Download Resume as PDF",

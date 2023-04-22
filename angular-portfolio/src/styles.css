@@ -430,3 +430,56 @@
       gap: 7px;
       width: fit-content;
     }
+
+
+    mat-panel-title{
+      gap: 1em;
+    }
+
+    .technical-skills-container{
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .skill-container{
+      
+      padding: 1em;
+      display: flex;
+      flex-direction: row;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #333;
+      border-radius: 4px;
+      align-items: center;
+      gap: 1em;
+    }
+
+    .skill-icon{
+      width: 54px !important;
+      height: 54px !important;
+      font-size: 54px;
+    }
+
+    .skill-icon-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skill-icon-container h3{
+      margin-block: 1em 0em;
+    }
+
+
+    ul{
+      padding-inline-start: 0;
+      list-style-type: none;
+    }
+
+    .focused-technical-skills{
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }

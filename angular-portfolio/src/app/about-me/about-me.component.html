@@ -15,7 +15,7 @@
           text-align: center;
           max-width: 100%;" >
             <h1 style="
-            margin: 1em 1em">Lucas Muñoz developer</h1>
+            margin: 1em 1em">Lucas Muñoz, fullstack developer</h1>
           </div>
         </div>
         
@@ -31,6 +31,11 @@
             <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()" [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
+
+                    <mat-icon>
+                      info
+                    </mat-icon>
+
                     {{this.content.aboutMePanelTitle}}
                   </mat-panel-title>
                   
@@ -43,8 +48,15 @@
 
 
             <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}">
+
+
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
+
+                        
+                  <mat-icon>
+                    person
+                  </mat-icon>
                     {{this.content.personalInfoTitle}}
                   </mat-panel-title>
                   
@@ -53,7 +65,7 @@
     
                 <ul>
                   
-                  <li>Age : {{getAge()}}</li>
+                  <li>🎂 Age : {{getAge()}}</li>
                   <li *ngFor="let item of content.personalInformationSection">{{item}}</li>
                 </ul>
             </mat-expansion-panel>
@@ -61,6 +73,9 @@
             <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
+                    <mat-icon>
+                      school
+                    </mat-icon>
                     {{this.content.academicFormationTitle}}
                   </mat-panel-title>
                   
@@ -68,28 +83,90 @@
     
     
                 <ul>
-                  <li><a style="color: #d6924c;" target="_blank" href="https://registrograduados.siu.edu.ar/consulta.php?ah=st630ff93c3aa1f6.05931950&ai=registro_dngu%7C%7C92000001&tcm=popup&cGFyYW1ldHJv=eyJpZF90cmFtaXRlIjoiNDI5MDA0Iiwic2lzdGVtYSI6InNpZGNlciIsImlkX3RpcG9fZG9jdW1lbnRvIjoiRE5JIiwiZG9jdW1lbnRvIjoiMzk5NDAxODgiLCJ0aXBvX3lfZG9jdW1lbnRvIjoiRG9jdW1lbnRvIE5hY2lvbmFsIGRlIElkZW50aWRhZCAzOTk0MDE4OCIsImZlY2hhX2VncmVzbyI6IjIwMTktMDctMTEiLCJub21icmVfYXBlbGxpZG8iOiJNVVx1MDBkMU9aLCBMVUNBUyBOQUhVRUwiLCJhcGVsbGlkbyI6Ik1VXHUwMGQxT1oiLCJub21icmUiOiJMVUNBUyBOQUhVRUwiLCJuYWNpb25hbGlkYWQiOiJBUkdFTlRJTkEiLCJpbnN0aXR1Y2lvbiI6IlVuaXZlcnNpZGFkIFRlY25vbFx1MDBmM2dpY2EgTmFjaW9uYWwiLCJ0aXR1bG8iOiJUXHUwMGU5Y25pY28gVW5pdmVyc2l0YXJpbyBlbiBQcm9ncmFtYWNpXHUwMGYzbiIsImJsb2NrY2hhaW4iOiJibG9ja2NoYWluX2xvZ29fbmVncm8ucG5nIn0%3D&tm=1">{{content.academicFormation}}</a></li>
+                  <li>📜<a style="color: #d6924c;" target="_blank" href="https://registrograduados.siu.edu.ar/consulta.php?ah=st630ff93c3aa1f6.05931950&ai=registro_dngu%7C%7C92000001&tcm=popup&cGFyYW1ldHJv=eyJpZF90cmFtaXRlIjoiNDI5MDA0Iiwic2lzdGVtYSI6InNpZGNlciIsImlkX3RpcG9fZG9jdW1lbnRvIjoiRE5JIiwiZG9jdW1lbnRvIjoiMzk5NDAxODgiLCJ0aXBvX3lfZG9jdW1lbnRvIjoiRG9jdW1lbnRvIE5hY2lvbmFsIGRlIElkZW50aWRhZCAzOTk0MDE4OCIsImZlY2hhX2VncmVzbyI6IjIwMTktMDctMTEiLCJub21icmVfYXBlbGxpZG8iOiJNVVx1MDBkMU9aLCBMVUNBUyBOQUhVRUwiLCJhcGVsbGlkbyI6Ik1VXHUwMGQxT1oiLCJub21icmUiOiJMVUNBUyBOQUhVRUwiLCJuYWNpb25hbGlkYWQiOiJBUkdFTlRJTkEiLCJpbnN0aXR1Y2lvbiI6IlVuaXZlcnNpZGFkIFRlY25vbFx1MDBmM2dpY2EgTmFjaW9uYWwiLCJ0aXR1bG8iOiJUXHUwMGU5Y25pY28gVW5pdmVyc2l0YXJpbyBlbiBQcm9ncmFtYWNpXHUwMGYzbiIsImJsb2NrY2hhaW4iOiJibG9ja2NoYWluX2xvZ29fbmVncm8ucG5nIn0%3D&tm=1">{{content.academicFormation}}</a></li>
                 </ul>
             </mat-expansion-panel>
 
             <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}">
                 <mat-expansion-panel-header>
                   <mat-panel-title  [ngClass]="{'light' : getTheme() == 'light'}">
+                    <mat-icon>
+                      handyman  
+                    </mat-icon>
+
                     {{content.technicalSkillsTitle}}
                   </mat-panel-title>
                   
                 </mat-expansion-panel-header>
+
+
+                <div class="technical-skills-container" [ngClass]="{'focused-technical-skills' :  isLayoutInfo()}">
+
+                 
+
+                  <div class="skill-container" [ngStyle]="{'flex-direction' : isLayoutInfo() ? 'column' : 'row'}">
+                    <div class="skill-icon-container">
+                     <mat-icon class="skill-icon">code</mat-icon>
+                     <h3>Frontend:</h3>
+                    </div>
+
+                    <ul>
+                      <li *ngFor="let item of content.technicalSkills.frontend">{{item}}</li>
+                    </ul>
+                    
+                  </div>
+
+                  <div class="skill-container" [ngStyle]="{'flex-direction' : isLayoutInfo() ? 'column' : 'row'}">
+                    <div class="skill-icon-container">
+
+                      <mat-icon class="skill-icon">device_hub</mat-icon>
+                      <h3>Backend:</h3>
+                    </div>
+                    <ul>
+                      <li *ngFor="let item of content.technicalSkills.backend">{{item}}</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="skill-container" [ngStyle]="{'flex-direction' : isLayoutInfo() ? 'column' : 'row'}">
+                    <div class="skill-icon-container">
+                      
+                      <mat-icon class="skill-icon">storage</mat-icon>
+                      <h3>Database:</h3>
+                    </div>
+
+                    <ul>
+                      <li *ngFor="let item of content.technicalSkills.database">{{item}}</li>
+                    </ul>
+
+                  </div>
+
+                  <div class="skill-container" [ngStyle]="{'flex-direction' : isLayoutInfo() ? 'column' : 'row'}">
+                    <div class="skill-icon-container">
+                      
+                      <mat-icon class="skill-icon">alt_route</mat-icon>
+                      <h3>Versioning:</h3>
+                    </div>
+                    <ul>
+                      <li *ngFor="let item of content.technicalSkills.versioning">{{item}}</li>
+                    </ul>
+
+                  </div>
+
+                </div>
     
     
-                <ul>
-                  <li *ngFor="let item of content.technicalSkills">{{item}}</li>
-                </ul>
+                
             </mat-expansion-panel>
 
 
             <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()"   [ngClass]="{'light' : getTheme() == 'light'}"  >
                 <mat-expansion-panel-header>
                   <mat-panel-title [ngClass]="{'light' : getTheme() == 'light'}">
+                    <mat-icon>
+                      diversity_3
+                    </mat-icon>
+
                     {{content.personalSkillsTitle}}
                   </mat-panel-title>
                   
