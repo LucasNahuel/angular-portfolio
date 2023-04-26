@@ -521,3 +521,9 @@
         flex-direction: row !important;
       }
   }
+
+  @media (hover: none){
+    .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
+        background: none;
+      }
+  }
