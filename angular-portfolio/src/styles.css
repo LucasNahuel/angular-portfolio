@@ -200,6 +200,7 @@
       padding: 0;
       background: transparent;
       box-shadow: none;
+      overflow: hidden !important;
   }
 
 
@@ -424,6 +425,8 @@
       border-style: solid;
       border-width: 1px;
       border-radius: 20px;
+      color: #d6924c;
+      font-size: 14px;
       border-color: #d6924c;
       padding: 10px;
       text-decoration: none;

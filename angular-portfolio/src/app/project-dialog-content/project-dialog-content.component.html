@@ -1,6 +1,6 @@
 <mat-card id="project-dialog-card" [ngClass]="{'light' : getTheme() == 'light' }">
 
-    <div style="display: flex; width: 100%; flex-direction: row; justify-content: space-between; align-items: center;" >
+    <div style="display: flex; width: 100%; flex-direction: row; justify-content: space-between; align-items: center; margin-bottom: 1em;" >
         <mat-card-title style="margin-bottom: 0px;">
             {{data.title}}
         </mat-card-title>
@@ -46,7 +46,7 @@
         </p>
 
         <div style="padding: 1em; display: flex; flex-direction: row; gap: 1em; justify-content: center; flex-wrap: wrap;">
-            <a href="{{data.deployment}}" style="color: #d6924c; font-size: 20px;" class="project-link">
+            <a href="{{data.deployment}}" class="project-link">
                 <mat-icon>
                     public
                 </mat-icon>
@@ -54,7 +54,7 @@
             </a>
         
            
-            <a href="{{data.repository}}" style="color: #d6924c; font-size: 20px; " class="project-link">
+            <a href="{{data.repository}}" class="project-link">
                 <img src="../../assets/images/icons8-github.svg" style="width: 24px; height: 24px; filter: invert(64%) sepia(53%) saturate(515%) hue-rotate(346deg) brightness(89%) contrast(87%);">
                 Respository
             </a>
