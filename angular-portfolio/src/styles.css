@@ -1,8 +1,17 @@
   /* You can add global styles to this file, and also import other style files */
 
+  @font-face {
+    font-family: "Ubuntu";
+    src: local("Ubuntu"), local("Ubuntu"),
+      url("./assets/font/Ubuntu-Regular.ttf");
+    }
+
+
   html, body { height: 100%; color: white;}
-  body{  background-color: #03060b; transition: 0.3s;}
-  body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  body{  background-color: #03060b; transition: 0.3s; font-family: "Ubuntu" !important; }
+  body { margin: 0; font-family: "Ubuntu" !important;}
+
+  *{ font-family: "Ubuntu";}
 
   #about-me-card{
       background-color: #13171c;
