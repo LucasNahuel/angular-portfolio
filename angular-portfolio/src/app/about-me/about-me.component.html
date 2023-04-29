@@ -1,8 +1,7 @@
 <mat-card id="about-me-card" style="display: flex; flex-direction: column;" [ngClass]="{ 'light' : getTheme() == 'light' }">
 
-    <div id="about-me-header" style="display: flex; flex-direction: column; width: 100%;">
+    <div id="about-me-header" >
 
-        <img src="../../assets/images/miniature-juanjo-jaramillo-mZnx9429i94-unsplash.jpg" style="height: 100px; width: 100%;object-fit: cover; border-top-left-radius: 4px; border-top-right-radius: 4px" [ngClass]="{'dark' : getTheme() == 'light'}" width="627" height="418">
 
         <div matRipple id="profile-pic-container">
           <img id="profile-pic" src="https://media.licdn.com/dms/image/D4D03AQHmHN9sQXgheQ/profile-displayphoto-shrink_800_800/0/1678862164359?e=1684368000&v=beta&t=RpQnyWEWnQ1ZFbuGPApEnbCFQCPrlsKSyoZolIcJ6Eo">
@@ -13,7 +12,9 @@
 
           <div  >
             <h1 style="
-            margin: 1em 1em; font-weight: 500; font-size: 2.5em;">Lucas Muñoz, fullstack developer</h1>
+            margin: auto auto; font-weight: 500; font-size: 2.5em;     background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2.2px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5); border-radius: 14px">Lucas Muñoz, fullstack developer</h1>
           </div>
         </div>
         
@@ -23,7 +24,7 @@
     <a id="downloadResumeLink" href="{{this.content.downloadResumeSource}}" download><mat-icon>file_download</mat-icon>{{this.content.downloadResumeText}}</a>
 
 
-    <div style="padding: 0 1em; margin-top: 2em;">
+    <div style="padding: 0 1em;">
 
         <mat-accordion id="mat-accordion"  multi>
             <mat-expansion-panel id="mat-expansion-panel" [expanded]="isLayoutInfo()" [ngClass]="{'light' : getTheme() == 'light'}">
