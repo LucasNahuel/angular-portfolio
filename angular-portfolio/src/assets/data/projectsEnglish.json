@@ -263,7 +263,7 @@
         "deployment": "https://angular-multi-step-form.vercel.app/",
         "repository": "https://github.com/LucasNahuel/angular-multi-step-form",
         "technologies": [
-            "Angular",
+            "angular",
             "typescript",
             "CSS",
             "HTML"
