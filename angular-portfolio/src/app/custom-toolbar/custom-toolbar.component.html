@@ -27,7 +27,7 @@
       
 
 
-      <button mat-mini-fab style="border: solid; border-width: 1px; background-color: transparent; box-shadow: none;" (click)="switchTheme()">
+      <button mat-mini-fab class="theme-button" (click)="switchTheme()">
         <mat-icon>{{ getTheme() == 'dark' ? 'light_mode' : 'dark_mode' }}</mat-icon>
       </button>
 

@@ -230,9 +230,6 @@
 
   .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent{
       color: white;
-      background: #d6924c;
-      opacity: 60%;
-      transition: 0.3s;
   }
   .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent:hover{
       opacity: 100%;
@@ -282,6 +279,12 @@
     #portfolio-icon{
       display: none;
     }
+
+    .searchbar-container{
+      flex-direction: column;
+    }
+
+
   }
 
   ::-webkit-scrollbar {
@@ -547,4 +550,15 @@
 
   #about-me-card.light #about-me-header #profile-pic-container{
     filter: invert(100%);
+  }
+
+  .theme-button{
+    border: solid !important; 
+    border-width: 1px !important; 
+    background-color: transparent !important; 
+    box-shadow: none !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-color: rgba(255, 255, 255, 0.25) !important
   }

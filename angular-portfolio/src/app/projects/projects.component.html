@@ -1,7 +1,7 @@
 
 
-<div style="display: flex; width: 100%; ">
-    <h1 style="margin-left: 1em;">{{content.primaryContentTitle}}</h1>
+<div style="display: flex; align-items: center; justify-content: center; padding: 0 1em;" class="searchbar-container">
+    <h1 >{{content.primaryContentTitle}}</h1>
 
     <form [formGroup]="form" style="width: 100%;" >
       <mat-form-field style="margin: 0; width: 100%;" appearance="fill"  #formfield [ngClass] = "{ 'light' : getTheme() == 'light' }">
