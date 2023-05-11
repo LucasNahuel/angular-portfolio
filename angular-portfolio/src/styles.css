@@ -181,14 +181,9 @@
       border-radius: 50%;
       border-style: solid;
       border-color: #d6924c;
-      transition: transform 0.3s;
       
   }
 
-  #profile-pic-container:hover{
-      transform: scale(1.05);
-      cursor: pointer;
-  }
 
   #profile-pic{
       width: 100%;
@@ -544,4 +539,12 @@
     .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
         background: none;
       }
+  }
+
+  #about-me-card.light #about-me-header{
+    filter: invert(100%);
+  }
+
+  #about-me-card.light #about-me-header #profile-pic-container{
+    filter: invert(100%);
   }
