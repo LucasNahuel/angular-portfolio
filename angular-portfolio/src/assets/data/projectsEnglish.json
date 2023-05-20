@@ -277,5 +277,27 @@
             "git",
             "forms"
         ]
+    },
+    {
+        "title": "Calendar app Spring Boot API",
+        "description": "Back-end Spring Boot based REST api intended for managing my calendar app web data stored into a MySQL db instance.",
+        "images": [
+            "calendar-springboot-api.PNG"
+        ],
+        "miniature": "calendar-springboot-api.PNG",
+        "deployment": "",
+        "repository": "https://github.com/LucasNahuel/calendar-springboot-api",
+        "technologies": [
+            "SpringBoot",
+            "Java",
+            "MySQL"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git"
+        ]
     }
 ]

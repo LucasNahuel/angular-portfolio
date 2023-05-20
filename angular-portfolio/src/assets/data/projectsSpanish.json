@@ -265,5 +265,27 @@
             "git",
             "forms"
         ]
+    },
+    {
+        "title": "Calendar app Spring Boot API",
+        "description": "Proyecto de Java Spring Boot para servir de back-end para mi aplicación de Calendario-React.",
+        "images": [
+            "calendar-springboot-api.PNG"
+        ],
+        "miniature": "calendar-springboot-api.PNG",
+        "deployment": "",
+        "repository": "https://github.com/LucasNahuel/calendar-springboot-api",
+        "technologies": [
+            "SpringBoot",
+            "Java",
+            "MySQL"
+        ],
+        "tags": [
+            "back-end",
+            "api",
+            "restful",
+            "npm",
+            "git"
+        ]
     }
 ]
