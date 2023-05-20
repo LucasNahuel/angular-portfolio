@@ -4,7 +4,7 @@
     <h1 >{{content.primaryContentTitle}}</h1>
 
     <form [formGroup]="form" style="width: 100%;" >
-      <mat-form-field style="margin: 0; width: 100%;" appearance="fill"  #formfield [ngClass] = "{ 'light' : getTheme() == 'light' }">
+      <mat-form-field  style="margin: 0; width: 100%;" appearance="fill"  #formfield [ngClass] = "{ 'light' : getTheme() == 'light' }">
           <mat-label [ngClass]="{'light' : getTheme() == 'light'}">{{content.searchbarText}}</mat-label>
           <mat-chip-list id="searchChipList" style="padding: 0; justify-content: flex-start;" #chipList aria-label="search">
             <mat-chip *ngFor="let tag of searchTags" (removed)="remove(tag)"  #tag>

@@ -154,7 +154,7 @@ export class ProjectsComponent implements OnInit {
   formFieldFocus(){
     var el = this.formField._elementRef.nativeElement.getElementsByClassName('mat-form-field-flex');
 
-
+    this.renderer.setStyle(el[0], 'border-width', '1px');
     this.renderer.setStyle(el[0], 'border-color', '#d6924c');
 
     
@@ -164,9 +164,13 @@ export class ProjectsComponent implements OnInit {
     
     var el = this.formField._elementRef.nativeElement.getElementsByClassName('mat-form-field-flex');
 
+    if(this.getTheme() == 'dark'){
 
-    this.renderer.setStyle(el[0], 'border-color', 'lightgrey');
+      this.renderer.setStyle(el[0], 'border-color', '#333');
 
+    }else{
+      this.renderer.setStyle(el[0], 'border-width', '0');
+    }
   }
 
   addTag(event: any){

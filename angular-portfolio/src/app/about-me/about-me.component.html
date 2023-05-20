@@ -4,7 +4,7 @@
 
 
         <div matRipple id="profile-pic-container">
-          <img id="profile-pic" src="https://media.licdn.com/dms/image/D4D03AQHmHN9sQXgheQ/profile-displayphoto-shrink_800_800/0/1678862164359?e=1684368000&v=beta&t=RpQnyWEWnQ1ZFbuGPApEnbCFQCPrlsKSyoZolIcJ6Eo">
+          <img id="profile-pic" src="https://media.licdn.com/dms/image/D4D03AQHmHN9sQXgheQ/profile-displayphoto-shrink_800_800/0/1678862164359?e=1689811200&v=beta&t=lENdZbNDS_zO3lnAWgQXPyAg4sj5lz4gD-5lfZDGbHE">
         </div>
 
         <div class="name-container">
@@ -99,7 +99,7 @@
                 </mat-expansion-panel-header>
 
 
-                <div class="technical-skills-container" [ngClass]="{'focused-technical-skills' :  isLayoutInfo()}">
+                <div class="technical-skills-container" [ngClass]="{'focused-technical-skills' :  isLayoutInfo(), 'light' : getTheme() == 'light'}">
 
                  
 
@@ -186,9 +186,9 @@
         </mat-accordion>
 
 
-        <div id="contact-info" [ngStyle]="{'border-color' : getTheme() == 'light' ? 'rgb(211 211 211)' : 'rgb(51 51 51)'}">
+        <div id="contact-info" [ngClass]="{'light' : getTheme() == 'light'}" >
 
-            <div style="width: 100%; margin-bottom: 1em;">{{this.content.contactLinksTitle}}</div>
+            <div style="width: 100%; margin-bottom: 1em; font-size: 16px;">{{this.content.contactLinksTitle}}</div>
 
             <div style="display: flex; flex-direction: row;">
 
