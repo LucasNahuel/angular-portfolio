@@ -16,7 +16,7 @@
     <div style="margin: 1em;" [ngStyle]="scroll">
 
         <div style="max-height: 500px; max-width: 800px;">
-            <img class="project-image-carousel" [ngStyle]="transition" [ngStyle]="zoom"src="../../assets/images/{{data.images[showImageIndex]}}">
+            <img class="project-image-carousel" [ngStyle]="transition" [ngStyle]="zoom"src="{{data.images[showImageIndex]}}">
         </div>
         
 

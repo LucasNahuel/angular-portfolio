@@ -3,12 +3,12 @@
         "title": "Registro de Entrenamiento",
         "description": "Aplicación Front-End basada en angular para crear o encontrar entrenamientos, como tambien funcionalidad para registrar y analizar el desempeño de cada sesión de entrenamiento.",
         "images": [
-            "registro-entrenamiento.vercel.app_ (1).png",
-            "registro-entrenamiento.vercel.app_ (2).png",
-            "registro-entrenamiento.vercel.app_.png",
-            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (1).png",
-            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (2).png",
-            "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+).png"
+            "../../assets/images/registro-entrenamiento.vercel.app_ (1).png",
+            "../../assets/images/registro-entrenamiento.vercel.app_ (2).png",
+            "../../assets/images/registro-entrenamiento.vercel.app_.png",
+            "../../assets/images/registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (1).png",
+            "../../assets/images/registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (2).png",
+            "../../assets/images/registro-entrenamiento.vercel.app_(Samsung Galaxy S8+).png"
         ],
         "miniature": "../../assets/images/miniature-registro-entrenamiento.vercel.app_.png",
         "technologies": [
@@ -32,7 +32,7 @@
         "title": "API Registro Entrenamiento",
         "description": "Aplicación Back-End basada en node.js para administrar los datos de mi aplicación 'Registro de Entrenamiento' guardados en MongoDB.",
         "images": [
-            "Captura de pantalla 2022-08-11 001059.png"
+            "../../assets/images/Captura de pantalla 2022-08-11 001059.png"
         ],
         "miniature": "../../assets/images/miniature-Captura de pantalla 2022-08-11 001059.png",
         "technologies": [
@@ -54,7 +54,7 @@
         "title": "Registro de Entrenamiento Spring Boot API",
         "description": "Back-end API basada en Java Spring Boot ideada para funcionar en conjunto a mi aplicación 'registro de entrenamiento', administrando datos almacenados en MySQL",
         "images": [
-            "training_springboot_api.PNG"
+            "../../assets/images/training_springboot_api.PNG"
         ],
         "miniature": "../../assets/images/training_springboot_api.PNG",
         "technologies": [
@@ -76,7 +76,7 @@
         "title" : "Portafolio Angular",
         "description" : "Aplicacion basada en Angular para exponer mis proyectos e informacion acerca de mí.",
         "images": [
-            "ang_portfolio_1.png", "ang_portfolio_2.png", "ang_portfolio_3.png"
+            "../../assets/images/ang_portfolio_1.png", "../../assets/images/ang_portfolio_2.png", "../../assets/images/ang_portfolio_3.png"
         ],
         "miniature" : "../../assets/images/ang_portfolio_1.png",
         "technologies" : [
@@ -97,7 +97,7 @@
         "title" : "Angular Spotify App",
         "description" : "Aplicacion de angular para explorar contenidos de spotify usando los servicios de la spotify api.",
         "images": [
-            "angular_spotify_app_1.png", "angular_spotify_app_2.png", "angular_spotify_app_3.png"
+            "../../assets/images/angular_spotify_app_1.png", "../../assets/images/angular_spotify_app_2.png", "../../assets/images/angular_spotify_app_3.png"
         ],
         "miniature" : "../../assets/images/miniature_angular_spotify_app_1.png",
         "deployment": "https://angular-spotify-app.vercel.app/",
@@ -122,7 +122,7 @@
         "title": "Angular Spotify Node Api",
         "description": "Node api que consume los servicios de la api de spotify y las entrega a mi aplicacion Angular-spotify.",
         "images": [
-            "angular_spotify_api.PNG"
+            "../../assets/images/angular_spotify_api.PNG"
         ],
         "miniature": "../../assets/images/angular_spotify_api.PNG",
         "deployment": "https://angular-spotify-api.vercel.app/",
@@ -144,8 +144,9 @@
         "title": "Maquetado Página inicio de Noticias",
         "description": "Maquetado de pagina web de noticias estatica y responsiva, en respuesta al desafío de Frontend-mentor.",
         "images": [
-             "fem-news-homepage-three.vercel.app_.png", "fem-news-homepage-three.vercel.app_(1).png",
-            "fem-news-homepage-three.vercel.app_(2).png"
+             "../../assets/images/fem-news-homepage-three.vercel.app_.png", 
+             "../../assets/images/fem-news-homepage-three.vercel.app_(1).png",
+            "../../assets/images/fem-news-homepage-three.vercel.app_(2).png"
         ],
         "miniature": "../../assets/images/miniature_fem-news-homepage-three.vercel.app_.png",
         "deployment": "https://fem-news-homepage-three.vercel.app/",
@@ -168,7 +169,8 @@
         "title": "Maquetado Página de notificaciones",
         "description": "Maquetado de pagina web de notificaciones estatica y responsiva, en respuesta al desafío de Frontend-mentor.",
         "images": [
-            "fem-notification-page-navy.vercel.app_.png", "fem-notification-page-navy.vercel.app_(1).png"
+            "../../assets/images/fem-notification-page-navy.vercel.app_.png",
+             "../../assets/images/fem-notification-page-navy.vercel.app_(1).png"
         ],
         "miniature": "../../assets/images/miniature_fem-notification-page-navy.vercel.app_.png",
         "deployment": "https://fem-notification-page-navy.vercel.app/",
@@ -190,7 +192,9 @@
         "title": "Calendario React",
         "description": "Administrador de calendario hecho en React.js",
         "images": [
-            "react-calendar-desktop-1.PNG", "react-calendar-desktop-2.PNG", "react-calendar-mobile-1.PNG", "react-calendar-mobile-2.PNG"
+            "../../assets/images/react-calendar-desktop-1.PNG", 
+            "../../assets/images/react-calendar-desktop-2.PNG", 
+            "../../assets/images/react-calendar-mobile-1.PNG", "../../assets/images/react-calendar-mobile-2.PNG"
         ],
         "miniature": "../../assets/images/react-calendar-desktop-1-miniature.PNG",
         "deployment": "https://react-calendar-lemon.vercel.app/",
@@ -221,7 +225,7 @@
         "title": "Calendario Node API",
         "description": "Aplicación back-end para ser utilizada junto con mi aplicación de calendario React.",
         "images": [
-            "node-calendar-1.PNG"
+            "../../assets/images/node-calendar-1.PNG"
         ],
         "miniature": "../../assets/images/node-calendar-1.PNG",
         "deployment": "https://node-calendar-api.vercel.app/",
@@ -244,8 +248,16 @@
         "title": "Formulario de multiples pasos",
         "description": "Solucion al reto de Frontend Mentor, incluyendo responsividad, sanitizacion y manejo de errores de entrada.",
         "images": [
-            "localhost_4200_.png", "localhost_4200_(1).png", "localhost_4200_(2).png", "localhost_4200_(3).png", "localhost_4200_(4).png",
-            "localhost_4200_(5).png", "localhost_4200_(6).png", "localhost_4200_(7).png", "localhost_4200_(8).png", "localhost_4200_(9).png"
+            "../../assets/images/localhost_4200_.png",
+             "../../assets/images/localhost_4200_(1).png",
+              "../../assets/images/localhost_4200_(2).png",
+               "../../assets/images/localhost_4200_(3).png", 
+               "../../assets/images/localhost_4200_(4).png",
+            "../../assets/images/localhost_4200_(5).png",
+             "../../assets/images/localhost_4200_(6).png", 
+             "../../assets/images/localhost_4200_(7).png",
+              "../../assets/images/localhost_4200_(8).png", 
+              "../../assets/images/localhost_4200_(9).png"
         ],
         "miniature": "../../assets/images/localhost_4200_miniature.png",
         "deployment": "https://angular-multi-step-form.vercel.app/",
@@ -270,7 +282,7 @@
         "title": "Calendar app Spring Boot API",
         "description": "Proyecto de Java Spring Boot para servir de back-end para mi aplicación de Calendario-React.",
         "images": [
-            "calendar-springboot-api.PNG"
+            "../../assets/images/calendar-springboot-api.PNG"
         ],
         "miniature": "../../assets/images/calendar-springboot-api.PNG",
         "deployment": "",
