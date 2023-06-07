@@ -10,7 +10,7 @@
             "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+) (2).png",
             "registro-entrenamiento.vercel.app_(Samsung Galaxy S8+).png"
         ],
-        "miniature": "miniature-registro-entrenamiento.vercel.app_.png",
+        "miniature": "../../assets/images/miniature-registro-entrenamiento.vercel.app_.png",
         "technologies": [
             "angular",
            "typescript",
@@ -34,7 +34,7 @@
         "images": [
             "Captura de pantalla 2022-08-11 001059.png"
         ],
-        "miniature": "miniature-Captura de pantalla 2022-08-11 001059.png",
+        "miniature": "../../assets/images/miniature-Captura de pantalla 2022-08-11 001059.png",
         "technologies": [
             "Node",
             "Express",
@@ -56,7 +56,7 @@
         "images": [
             "training_springboot_api.PNG"
         ],
-        "miniature": "training_springboot_api.PNG",
+        "miniature": "../../assets/images/training_springboot_api.PNG",
         "technologies": [
             "SpringBoot",
             "Java",
@@ -78,7 +78,7 @@
         "images": [
             "ang_portfolio_1.png", "ang_portfolio_2.png", "ang_portfolio_3.png"
         ],
-        "miniature" : "ang_portfolio_1.png",
+        "miniature" : "../../assets/images/ang_portfolio_1.png",
         "technologies" : [
             "angular",
             "typescript"
@@ -99,7 +99,7 @@
         "images": [
             "angular_spotify_app_1.png", "angular_spotify_app_2.png", "angular_spotify_app_3.png"
         ],
-        "miniature" : "miniature_angular_spotify_app_1.png",
+        "miniature" : "../../assets/images/miniature_angular_spotify_app_1.png",
         "deployment": "https://angular-spotify-app.vercel.app/",
         "repository": "https://github.com/LucasNahuel/angular-spotify-app",
         "technologies" : [
@@ -124,7 +124,7 @@
         "images": [
             "angular_spotify_api.PNG"
         ],
-        "miniature": "angular_spotify_api.PNG",
+        "miniature": "../../assets/images/angular_spotify_api.PNG",
         "deployment": "https://angular-spotify-api.vercel.app/",
         "repository": "https://github.com/LucasNahuel/angular-spotify-api",
         "technologies": [
@@ -147,7 +147,7 @@
              "fem-news-homepage-three.vercel.app_.png", "fem-news-homepage-three.vercel.app_(1).png",
             "fem-news-homepage-three.vercel.app_(2).png"
         ],
-        "miniature": "miniature_fem-news-homepage-three.vercel.app_.png",
+        "miniature": "../../assets/images/miniature_fem-news-homepage-three.vercel.app_.png",
         "deployment": "https://fem-news-homepage-three.vercel.app/",
         "repository": "https://github.com/LucasNahuel/fem-news-homepage",
         "technologies": [
@@ -170,7 +170,7 @@
         "images": [
             "fem-notification-page-navy.vercel.app_.png", "fem-notification-page-navy.vercel.app_(1).png"
         ],
-        "miniature": "miniature_fem-notification-page-navy.vercel.app_.png",
+        "miniature": "../../assets/images/miniature_fem-notification-page-navy.vercel.app_.png",
         "deployment": "https://fem-notification-page-navy.vercel.app/",
         "repository": "https://github.com/LucasNahuel/fem-notification-page",
         "technologies": [
@@ -192,7 +192,7 @@
         "images": [
             "react-calendar-desktop-1.PNG", "react-calendar-desktop-2.PNG", "react-calendar-mobile-1.PNG", "react-calendar-mobile-2.PNG"
         ],
-        "miniature": "react-calendar-desktop-1-miniature.PNG",
+        "miniature": "../../assets/images/react-calendar-desktop-1-miniature.PNG",
         "deployment": "https://react-calendar-lemon.vercel.app/",
         "repository": "https://github.com/LucasNahuel/react-calendar",
         "technologies": [
@@ -223,7 +223,7 @@
         "images": [
             "node-calendar-1.PNG"
         ],
-        "miniature": "node-calendar-1.PNG",
+        "miniature": "../../assets/images/node-calendar-1.PNG",
         "deployment": "https://node-calendar-api.vercel.app/",
         "repository": "https://github.com/LucasNahuel/node-calendar-api",
         "technologies": [
@@ -247,7 +247,7 @@
             "localhost_4200_.png", "localhost_4200_(1).png", "localhost_4200_(2).png", "localhost_4200_(3).png", "localhost_4200_(4).png",
             "localhost_4200_(5).png", "localhost_4200_(6).png", "localhost_4200_(7).png", "localhost_4200_(8).png", "localhost_4200_(9).png"
         ],
-        "miniature": "localhost_4200_miniature.png",
+        "miniature": "../../assets/images/localhost_4200_miniature.png",
         "deployment": "https://angular-multi-step-form.vercel.app/",
         "repository": "https://github.com/LucasNahuel/angular-multi-step-form",
         "technologies": [
@@ -272,7 +272,7 @@
         "images": [
             "calendar-springboot-api.PNG"
         ],
-        "miniature": "calendar-springboot-api.PNG",
+        "miniature": "../../assets/images/calendar-springboot-api.PNG",
         "deployment": "",
         "repository": "https://github.com/LucasNahuel/calendar-springboot-api",
         "technologies": [
