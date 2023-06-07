@@ -299,5 +299,34 @@
             "npm",
             "git"
         ]
+    },
+    {
+        "title": "Juego Piedra, Papel o Tijeras",
+        "description": "Solución al desafío de front-end mentor. Incluye responsiveness, animaciones CSS, hooks de React y más.",
+        "images": [
+            "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-1.png?raw=true",
+            "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-2.png?raw=true",
+             "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-3.png?raw=true",
+              "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-mobile-1.png?raw=true",
+            "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-mobile-2.png?raw=true",
+             "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-mobile-3.png?raw=true"
+        ],
+        "miniature": "https://github.com/LucasNahuel/react-rock-paper-scissor/blob/main/src/assets/screenshots/rock-paper-scissor-1.png?raw=true",
+        "deployment": "https://react-rock-paper-scissor-pied.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/react-rock-paper-scissor",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "tags": [
+            "front-end",
+            "media queries",
+            "responsive",
+            "flexbox",
+            "npm",
+            "git"
+        ]
     }
 ]
