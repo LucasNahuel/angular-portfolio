@@ -331,4 +331,30 @@
             "git"
         ]
     }
+    ,
+    {
+        "title": "IP Address Tracker app",
+        "description": "A project solving the frontend mentor challenge, including api calls, made in react",
+        "images": [
+            "https://github.com/LucasNahuel/ip-address-tracker/raw/main/src/assets/results/ip-address-tracking-result-desktop.png",
+            "https://github.com/LucasNahuel/ip-address-tracker/raw/main/src/assets/results/ip-address-tracking-result-mobile.png"
+        ],
+        "miniature": "https://github.com/LucasNahuel/ip-address-tracker/raw/main/src/assets/results/ip-address-tracking-result-desktop.png",
+        "deployment": "https://ip-address-tracker-xi-bice.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/ip-address-tracker",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "tags": [
+            "front-end",
+            "media queries",
+            "responsive",
+            "flexbox",
+            "npm",
+            "git"
+        ]
+    }
 ]

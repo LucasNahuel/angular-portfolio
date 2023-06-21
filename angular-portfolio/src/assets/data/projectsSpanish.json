@@ -328,5 +328,30 @@
             "npm",
             "git"
         ]
+    },
+    {
+        "title": "App de rastreo de IP",
+        "description": "Un proyecto en respuesta al desafío de Frontend Mentor, incluyendo el uso de la api de IPAPI.co",
+        "images": [
+            "https://github.com/LucasNahuel/ip-address-tracker/raw/main/src/assets/results/ip-address-tracking-result-desktop.png",
+            "https://github.com/LucasNahuel/ip-address-tracker/raw/main/src/assets/results/ip-address-tracking-result-mobile.png"
+        ],
+        "miniature": "https://github.com/LucasNahuel/ip-address-tracker/raw/main/src/assets/results/ip-address-tracking-result-desktop.png",
+        "deployment": "https://ip-address-tracker-xi-bice.vercel.app/",
+        "repository": "https://github.com/LucasNahuel/ip-address-tracker",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "tags": [
+            "front-end",
+            "media queries",
+            "responsive",
+            "flexbox",
+            "npm",
+            "git"
+        ]
     }
 ]
