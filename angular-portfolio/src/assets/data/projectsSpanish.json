@@ -357,9 +357,9 @@
         "title": "Filtro de anunciantes spam en LinkedIn",
         "description": "Un script de GreasyFork para ocultar los anuncios de trabajo en LinkedIn de las empresas seleccionadas por el usuario.",
         "images": [
-            "https://github.com/LucasNahuel/linkedin-no-spam-posting-script/blob/main/filter-announcers.PNG"
+            "https://github.com/LucasNahuel/linkedin-no-spam-posting-script/blob/main/filter-announcers.PNG?raw=true"
         ],
-        "miniature": "https://github.com/LucasNahuel/linkedin-no-spam-posting-script/blob/main/filter-announcers.PNG",
+        "miniature": "https://github.com/LucasNahuel/linkedin-no-spam-posting-script/blob/main/filter-announcers.PNG?raw=true",
         "deployment": "https://greasyfork.org/en/scripts/472011-not-more-job-spamposting",
         "repository": "https://github.com/LucasNahuel/linkedin-no-spam-posting-script.git",
         "technologies": [
