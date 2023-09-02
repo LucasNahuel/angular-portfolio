@@ -356,5 +356,25 @@
             "npm",
             "git"
         ]
+    },
+    {
+        "title": "Spam announcers filter for LinkedIn",
+        "description": "A GreasyFork script intended for hidding LinkedIn job announces from user selected publishers.",
+        "images": [
+            "https://github.com/LucasNahuel/linkedin-no-spam-posting-script/blob/main/filter-announcers.PNG"
+        ],
+        "miniature": "https://github.com/LucasNahuel/linkedin-no-spam-posting-script/blob/main/filter-announcers.PNG",
+        "deployment": "https://greasyfork.org/en/scripts/472011-not-more-job-spamposting",
+        "repository": "https://github.com/LucasNahuel/linkedin-no-spam-posting-script.git",
+        "technologies": [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "GreasyFork"
+        ],
+        "tags": [
+            "front-end",
+            "git"
+        ]
     }
 ]
