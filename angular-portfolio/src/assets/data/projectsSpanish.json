@@ -372,5 +372,24 @@
             "front-end",
             "git"
         ]
+    },{
+        "title": "Filtro de anuncios de trabajo promocionados en LinkedIn",
+        "description": "Un script de GreasyFork para ocultar los anuncios de trabajo en LinkedIn marcados como promocionados.",
+        "images": [
+            "https://github.com/LucasNahuel/no-promoted-announces/blob/main/promoted-announces-filter.PNG?raw=true"
+        ],
+        "miniature": "https://github.com/LucasNahuel/no-promoted-announces/blob/main/promoted-announces-filter.PNG?raw=true",
+        "deployment": "https://greasyfork.org/en/scripts/473616-no-promoted-job-announces-filter",
+        "repository": "https://github.com/LucasNahuel/no-promoted-announces.git",
+        "technologies": [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "GreasyFork"
+        ],
+        "tags": [
+            "front-end",
+            "git"
+        ]
     }
 ]

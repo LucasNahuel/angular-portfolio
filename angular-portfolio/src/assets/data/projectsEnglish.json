@@ -376,5 +376,25 @@
             "front-end",
             "git"
         ]
+    },
+    {
+        "title": "Promoted job announces filter for LinkedIn",
+        "description": "A GreasyFork script intended for hidding LinkedIn promoted job announces.",
+        "images": [
+            "https://github.com/LucasNahuel/no-promoted-announces/blob/main/promoted-announces-filter.PNG?raw=true"
+        ],
+        "miniature": "https://github.com/LucasNahuel/no-promoted-announces/blob/main/promoted-announces-filter.PNG?raw=true",
+        "deployment": "https://greasyfork.org/en/scripts/473616-no-promoted-job-announces-filter",
+        "repository": "https://github.com/LucasNahuel/no-promoted-announces.git",
+        "technologies": [
+            "JavaScript",
+            "CSS",
+            "HTML",
+            "GreasyFork"
+        ],
+        "tags": [
+            "front-end",
+            "git"
+        ]
     }
 ]
